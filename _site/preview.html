@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for Emergency Management — companion preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#15202b; --ink2:#1d2a36; --paper:#f4f6f5; --signal:#0b6b73; --signal2:#0a565c;
+  --line:#d7dcda; --muted:#5b6b6e;
+  --mitigate:#3b6fb0; --prepare:#c98a2c; --respond:#c0492f; --recover:#5e9e6e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif;line-height:1.6;font-size:16px;}
+.wrap{max-width:1040px;margin:0 auto;padding:1.5rem 1.2rem 4rem;}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.14em;
+  text-transform:uppercase;color:#67c2c9;}
+h1,h2{font-family:"Libre Franklin",system-ui,sans-serif;letter-spacing:-.01em;}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--ink),var(--ink2));color:#eef2f1;
+  border-radius:12px;padding:2.4rem 2.2rem;margin-bottom:2rem;border:1px solid #0c1620;}
+.hero h1{color:#fff;font-size:2.4rem;line-height:1.08;margin:.5rem 0 .5rem;max-width:24ch;}
+.lede{color:#c7d2d1;font-size:1.1rem;max-width:60ch;margin:0 0 1.1rem;}
+.readout{font-family:"IBM Plex Mono",monospace;font-size:.92rem;color:#9fb0b0;margin:1.1rem 0;}
+.readout b{color:#fff;font-weight:600;}
+.skybar{border-left:3px solid #67c2c9;background:rgba(103,194,201,.08);padding:.7rem 1rem;
+  border-radius:0 6px 6px 0;font-size:.95rem;color:#d6e0df;}
+.skybar b{color:#fff;}
+
+h2{margin-top:2.2rem;border-bottom:1px solid var(--line);padding-bottom:.35rem;font-size:1.5rem;}
+.note{color:var(--muted);font-size:.95rem;max-width:70ch;}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:flex-end;
+  padding:1rem 1.1rem;background:#fff;border:1px solid var(--line);border-radius:8px;margin:1rem 0;}
+.controls label{display:block;font-family:"Libre Franklin",sans-serif;font-size:.72rem;
+  text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:.2rem;}
+.controls input,.controls select{font:inherit;font-size:.9rem;padding:.35rem .5rem;
+  border:1px solid var(--line);border-radius:5px;background:#fff;}
+.controls input{min-width:240px;}
+.count{font-family:"IBM Plex Mono",monospace;font-size:.85rem;color:var(--muted);margin:.6rem 0;}
+.count b{color:var(--ink);}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-family:"Libre Franklin",sans-serif;font-size:.88rem;}
+thead th{position:sticky;top:0;background:var(--ink);color:#fff;text-align:left;font-weight:600;
+  font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;padding:.55rem .6rem;}
+tbody td{padding:.6rem;border-bottom:1px solid var(--line);vertical-align:top;}
+tbody tr:nth-child(odd){background:#fbfcfb;}
+.uc-name{font-weight:600;min-width:11rem;}
+.num{font-family:"IBM Plex Mono",monospace;text-align:center;}
+.meth{color:var(--muted);font-size:.84rem;}
+.prob{font-family:"Source Serif 4",serif;font-size:.88rem;min-width:15rem;}
+.chip{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;
+  padding:.07rem .42rem;border-radius:4px;margin:1px 2px 1px 0;color:#fff;white-space:nowrap;}
+.c-Mitigation{background:var(--mitigate);}.c-Preparedness{background:var(--prepare);}
+.c-Response{background:var(--respond);}.c-Recovery{background:var(--recover);}
+.feas{font-family:"IBM Plex Mono",monospace;font-size:.72rem;font-weight:600;padding:.1rem .4rem;border-radius:4px;white-space:nowrap;}
+.feas-High{background:#e4f1e7;color:#2f6b3e;}.feas-Moderate{background:#fdf1de;color:#8a5a18;}
+.feas-Mixed{background:#eae6f3;color:#5b4a86;}.feas-Low{background:#f6e2dd;color:#9a3b27;}
+.legend{display:flex;gap:.8rem;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin:.8rem 0;align-items:center;}
+.banner{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--muted);
+  border:1px dashed var(--line);border-radius:6px;padding:.5rem .8rem;margin-bottom:1rem;}
+@media(max-width:640px){.hero h1{font-size:1.9rem}.controls input{min-width:160px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="banner">PREVIEW // standalone HTML — the real site is a Quarto build (see README). This file mirrors the theme and catalog so you can see it without installing anything.</div>
+
+  <section class="hero">
+    <div class="eyebrow">COMPANION // FAccT '26</div>
+    <h1>Investigating the Role of AI in Emergency Management</h1>
+    <p class="lede">Use cases, challenges, and opportunities — turned into a project picker and onboarding kit for computing researchers.</p>
+    <div class="readout"><b>32</b> interviewed emergency managers&nbsp;·&nbsp;<b>7</b> use-case categories&nbsp;·&nbsp;<b>136</b> specific use cases</div>
+    <div class="skybar"><b>~95%</b> of an emergency manager's time is "blue sky" — non-activated. Yet most tools target the other 5%. Build for the 95%.</div>
+  </section>
+
+  <h2>Use-Case Catalog</h2>
+  <p class="note">Filter by category, EM phase, feasibility, and current AI use — then read the open problems. (20 grounded example rows shown; the real catalog extends to 136.)</p>
+
+  <div class="legend">
+    <span>EM phase:</span>
+    <span class="chip c-Mitigation">Mitigation</span>
+    <span class="chip c-Preparedness">Preparedness</span>
+    <span class="chip c-Response">Response</span>
+    <span class="chip c-Recovery">Recovery</span>
+  </div>
+
+  <div class="controls">
+    <div><label>Search</label><input id="q" type="search" placeholder="use cases, methods, open problems…"></div>
+    <div><label>Category</label><select id="category"></select></div>
+    <div><label>EM phase</label><select id="phase"></select></div>
+    <div><label>Feasibility</label><select id="feasibility"></select></div>
+    <div><label>Current AI use</label><select id="ai"></select></div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div style="overflow-x:auto"><table id="tbl">
+    <thead><tr><th>Use case</th><th>Category</th><th>Phase</th><th>Part.</th><th>Feasibility</th><th>AI now</th><th>Datasets / methods</th><th>Open problems</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+</div>
+
+<script>
+const DATA = [
+{id:"UC1-01",use_case:"Audience-specific message customization",category:"Public & Stakeholder Messaging",phase:"Preparedness/Response",participants:24,feasibility:"High",current_ai:"Yes",datasets_methods:"LLMs; readability scoring",open_problems:"Equity of reading-level adaptation; avoiding patronizing or excluding specific communities"},
+{id:"UC1-02",use_case:"Multi-language warning translation",category:"Public & Stakeholder Messaging",phase:"Preparedness/Response",participants:24,feasibility:"High",current_ai:"Limited",datasets_methods:"Commercial MT APIs; NLLB",open_problems:"Which languages get prioritized; low-resource quality; safety of a mistranslated warning"},
+{id:"UC1-03",use_case:"Message compliance checking",category:"Public & Stakeholder Messaging",phase:"Preparedness/Response",participants:24,feasibility:"High",current_ai:"None",datasets_methods:"LLMs + rules; IPAWS best practices",open_problems:"Encoding evolving best practices; jurisdiction-specific rules"},
+{id:"UC1-04",use_case:"Misinformation monitoring and flagging",category:"Public & Stakeholder Messaging",phase:"Response",participants:24,feasibility:"Low",current_ai:"None",datasets_methods:"Crisis NLP; rumor-propagation models",open_problems:"Misinfo spreads faster than verification; accuracy drops on novel claims; false positives undermine legitimate community intel"},
+{id:"UC2-01",use_case:"Social media intelligence with hot-spot clustering",category:"Situational Awareness",phase:"Response",participants:15,feasibility:"Moderate",current_ai:"None",datasets_methods:"CrisisTransformers; HumAID; CrisisLex",open_problems:"Verification-vs-speed tension; sparse geolocation; degraded-conditions availability"},
+{id:"UC2-02",use_case:"Multi-stream synthesis dashboard",category:"Situational Awareness",phase:"Response",participants:15,feasibility:"Moderate",current_ai:"None",datasets_methods:"Data fusion; dashboarding",open_problems:"API access and interoperability exceed local-agency capacity; must reduce cognitive load, not add streams"},
+{id:"UC2-03",use_case:"Anomaly detection and flagging",category:"Situational Awareness",phase:"Response",participants:15,feasibility:"Moderate",current_ai:"None",datasets_methods:"Time-series / sensor anomaly detection",open_problems:"Defining anomaly across hazard types; false-alarm fatigue"},
+{id:"UC3-01",use_case:"Automated plan review against EMAP",category:"Planning",phase:"Mitigation/Preparedness",participants:12,feasibility:"High",current_ai:"None",datasets_methods:"RAG; document analysis; EMAP criteria",open_problems:"Temporal obsolescence — plans go stale before finalization; keeping criteria current"},
+{id:"UC3-02",use_case:"Dependency detection (crosswalk)",category:"Planning",phase:"Mitigation/Preparedness",participants:12,feasibility:"High",current_ai:"None",datasets_methods:"Cross-document IE; graph methods",open_problems:"Plans often non-digitized / non-standardized; integration across many documents"},
+{id:"UC3-03",use_case:"After-action review synthesis across jurisdictions",category:"Planning",phase:"Recovery",participants:12,feasibility:"High",current_ai:"None",datasets_methods:"LLM summarization; clustering",open_problems:"Comparability across heterogeneous AARs; surfacing transferable lessons"},
+{id:"UC4-01",use_case:"Incident Action Plan generation from commander intent",category:"Incident Management",phase:"Response",participants:11,feasibility:"High",current_ai:"None",datasets_methods:"LLMs; ICS / IAP templates",open_problems:"Maintaining human authority; fidelity to intent; auditability of generated text"},
+{id:"UC4-02",use_case:"EOC activation decision support",category:"Incident Management",phase:"Response",participants:11,feasibility:"Low",current_ai:"None",datasets_methods:"—",open_problems:"~1,400 counties with idiosyncratic criteria; liability and political factors are not algorithmic — flagged rabbit hole"},
+{id:"UC5-01",use_case:"Automated damage detection from imagery",category:"Damage Assessment",phase:"Response/Recovery",participants:10,feasibility:"High",current_ai:"Limited",datasets_methods:"xBD; CV; U-Net; damage transformers",open_problems:"Volume of imagery to review; Global-South geographic bias in training data"},
+{id:"UC5-02",use_case:"Change detection (pre/post imagery)",category:"Damage Assessment",phase:"Response/Recovery",participants:10,feasibility:"High",current_ai:"None",datasets_methods:"Siamese CV; xBD",open_problems:"Availability of pre-event imagery; accurate georeferencing"},
+{id:"UC5-03",use_case:"Auto-generated Preliminary Damage Assessments",category:"Damage Assessment",phase:"Recovery",participants:10,feasibility:"Moderate",current_ai:"None",datasets_methods:"CV + report templates; GIS",open_problems:"Workflow and GIS integration; interoperability (an engineering, not research, problem)"},
+{id:"UC6-01",use_case:"Adaptive scenario and inject generation",category:"Exercises",phase:"Preparedness",participants:8,feasibility:"High",current_ai:"Yes",datasets_methods:"LLM narrative generation",open_problems:"Plausibility and realism; internal consistency of generated injects"},
+{id:"UC6-02",use_case:"After-action performance analytics",category:"Exercises",phase:"Preparedness",participants:8,feasibility:"High",current_ai:"None",datasets_methods:"LLMs; decision-point capture",open_problems:"Metric design without adverse incentives; not over-simplifying complex decisions"},
+{id:"UC7-01",use_case:"UAV search-target identification",category:"Search and Rescue",phase:"Response",participants:6,feasibility:"Moderate",current_ai:"None",datasets_methods:"Aerial DL detection; embedded inference",open_problems:"SAR datasets limited to European terrain; on-device compute constraints"},
+{id:"UC7-02",use_case:"Search-pattern optimization",category:"Search and Rescue",phase:"Response",participants:6,feasibility:"Moderate",current_ai:"None",datasets_methods:"RL; path planning",open_problems:"Communication interoperability is the binding constraint, not AI capability"},
+{id:"UC7-03",use_case:"Multi-agency deconfliction and coordination",category:"Search and Rescue",phase:"Response",participants:6,feasibility:"Moderate",current_ai:"None",datasets_methods:"Optimization; shared protocols",open_problems:"Needs institutional agreements and standardized protocols that exceed software scope"}
+];
+
+const $ = id => document.getElementById(id);
+function opts(sel, values){ sel.innerHTML = ['All',...values].map(v=>`<option>${v}</option>`).join(''); }
+opts($('category'), [...new Set(DATA.map(d=>d.category))]);
+opts($('phase'), ['Mitigation','Preparedness','Response','Recovery']);
+opts($('feasibility'), ['High','Moderate','Mixed','Low']);
+opts($('ai'), ['Yes','Limited','None']);
+
+const esc = s => String(s).replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function chips(p){ return p.split('/').map(x=>x.trim()).filter(Boolean)
+  .map(x=>`<span class="chip c-${x}">${x}</span>`).join(''); }
+
+function render(){
+  const q = $('q').value.toLowerCase();
+  const cat=$('category').value, ph=$('phase').value, fe=$('feasibility').value, ai=$('ai').value;
+  const rows = DATA.filter(d=>{
+    const hay = (d.use_case+' '+d.datasets_methods+' '+d.open_problems+' '+d.category).toLowerCase();
+    return (!q || hay.includes(q))
+      && (cat==='All' || d.category===cat)
+      && (ph==='All' || d.phase.includes(ph))
+      && (fe==='All' || d.feasibility.startsWith(fe))
+      && (ai==='All' || d.current_ai===ai);
+  });
+  $('count').innerHTML = `<b>${rows.length}</b> of ${DATA.length} use cases shown`;
+  $('tbl').tBodies[0].innerHTML = rows.map(d=>`<tr>
+    <td class="uc-name">${esc(d.use_case)}</td>
+    <td>${esc(d.category)}</td>
+    <td>${chips(d.phase)}</td>
+    <td class="num">${d.participants}</td>
+    <td><span class="feas feas-${d.feasibility}">${d.feasibility}</span></td>
+    <td>${d.current_ai}</td>
+    <td class="meth">${esc(d.datasets_methods)}</td>
+    <td class="prob">${esc(d.open_problems)}</td>
+  </tr>`).join('');
+}
+['q','category','phase','feasibility','ai'].forEach(id=>{
+  $(id).addEventListener('input', render); $(id).addEventListener('change', render);
+});
+render();
+</script>
+</body>
+</html>
