@@ -1,0 +1,73 @@
+---
+title: ""
+toc: false
+page-layout: full
+---
+
+::: {.hero}
+[COMPANION // FAccT '26]{.eyebrow}
+
+# Investigating the Role of AI in Emergency Management {.hero-title}
+
+[Use cases, challenges, and opportunities — turned into a project picker and onboarding kit for computing researchers.]{.lede}
+
+::: {.readout}
+[32]{.rnum} interviewed emergency managers&nbsp;·&nbsp; [7]{.rnum} use-case categories&nbsp;·&nbsp; [136]{.rnum} specific use cases
+:::
+
+::: {.skybar}
+**~95%** of an emergency manager's time is "blue sky" — non-activated. Yet most tools target the other 5%. Build for the 95%.
+:::
+
+[Open the catalog →](catalog.qmd){.btn-primary} [Read the paper](https://doi.org/10.1145/3805689.3812279){.btn-ghost}
+:::
+
+## Start here
+
+The single highest-value artifact is the catalog: it turns the paper into a literal project picker. The rest is an onboarding kit so you start with eyes open instead of rebuilding the field's known mistakes.
+
+::: {.cards}
+<a class="card-link" href="catalog.qmd">
+  <span class="cn">01 / CATALOG</span>
+  <div class="ct">Use-Case Catalog</div>
+  <div class="cd">All 136 use cases, filterable by category, EM phase, feasibility, and current AI use — each with an "open problems" column.</div>
+</a>
+<a class="card-link" href="datasets.qmd">
+  <span class="cn">02 / DATA</span>
+  <div class="ct">Datasets Starter Pack</div>
+  <div class="cd">xBD, HumAID, CrisisBench, CrisisLex, CrisisTransformers — with their known geographic and linguistic biases noted up front.</div>
+</a>
+<a class="card-link" href="literacy.qmd">
+  <span class="cn">03 / DOCTRINE</span>
+  <div class="ct">Domain Literacy</div>
+  <div class="cd">NIMS/ICS, the Whole Community doctrine, EMAP standards, a sample ICS-201/IAP, and the staffing + funding evidence base.</div>
+</a>
+<a class="card-link" href="meet-an-em.qmd">
+  <span class="cn">04 / PEOPLE</span>
+  <div class="ct">Meet an EM</div>
+  <div class="cd">How to engage practitioners ethically: where to find them, what a ride-along or tabletop involves, and the norms that matter.</div>
+</a>
+<a class="card-link" href="anti-patterns.qmd">
+  <span class="cn">05 / PITFALLS</span>
+  <div class="ct">Anti-Patterns</div>
+  <div class="cd">The rabbit holes — activation prediction, autonomous life-safety decisions, misinformation-detection overpromises — and why.</div>
+</a>
+<a class="card-link" href="instruments.qmd">
+  <span class="cn">06 / METHOD</span>
+  <div class="ct">Reusable Instruments</div>
+  <div class="cd">The interview protocol and codebook, offered for replication — including the international extension the paper invites.</div>
+</a>
+:::
+
+## The four phases
+
+Emergency management runs on a cyclical four-phase model. Throughout this companion, phase chips mark which part of the cycle a use case touches.
+
+::: {.phase-legend}
+[Mitigation]{.chip .chip-mitigate} [Preparedness]{.chip .chip-prepare} [Response]{.chip .chip-respond} [Recovery]{.chip .chip-recover}
+:::
+
+::: {.callout-tip}
+## How to cite
+Foubert, S., Park, M., Pardeshi, K. S., Manzini, T., McDaniel, R., Merrick, D., Murphy, R., Singh, A., & Heidari, H. (2026). *Investigating the Role of AI in Emergency Management: Use Cases, Challenges, and Opportunities.* FAccT '26. <https://doi.org/10.1145/3805689.3812279>
+:::

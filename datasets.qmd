@@ -1,0 +1,44 @@
+---
+title: "Datasets Starter Pack"
+subtitle: "The benchmarks and models that already exist for crisis AI — and the biases newcomers should know about before training on them."
+---
+
+Start here instead of from scratch. Each of these is mature enough to build on, and each carries a known limitation that will quietly shape your results if you ignore it. The point of this page is to start with eyes open.
+
+## Damage assessment (computer vision)
+
+**xBD** — the anchor benchmark for building-damage assessment from satellite imagery: over 850,000 building annotations across roughly 45,000 km² spanning six disaster types.
+
+> ⚠️ **Known bias:** damage-assessment models show reduced performance on Global South contexts. Evaluate across geographic subgroups before claiming generality.
+
+- Paper: Gupta et al., *Creating xBD* (CVPR Workshops, 2019).
+- Related: U-Net (Ronneberger et al., 2015) and transformer-based damage models (Kaur et al., 2023) for architecture baselines.
+
+## Crisis NLP (text classification)
+
+**HumAID** — human-annotated disaster tweets with deep-learning benchmarks (Alam et al., 2021).
+
+**CrisisBench** — a consolidated benchmark of crisis-related social-media datasets for humanitarian information processing (Alam et al., 2021).
+
+**CrisisLex** — a lexicon for collecting and filtering microblogged communications during crises (Olteanu et al., 2014).
+
+> ⚠️ **Known bias:** crisis NLP corpora are predominantly English-centric. Performance for non-English and code-switched messages is largely unmeasured.
+
+## Domain-specific language models
+
+**CrisisTransformers** — pretrained language models and sentence encoders for crisis-related text; reported to outperform general-purpose models by roughly 10–17% on crisis-classification tasks (Lamsal et al., 2024).
+
+- Useful when general LLMs underperform on short, noisy, disaster-specific text.
+
+## Search and rescue (aerial imagery)
+
+Deep-learning approaches to aerial-imagery analysis and reinforcement-learning search-pattern optimization are technically well established (Božić-Štulić et al., 2019; Dong et al., 2021; Ewers et al., 2025).
+
+> ⚠️ **Known bias:** publicly available SAR imagery datasets are geographically limited to European terrain. Models may not transfer to other landscapes.
+
+::: {.callout-important}
+## The cross-cutting lesson
+Training-data biases — the geographic limits of damage datasets, the English-centricity of crisis NLP — risk creating systems that perform worst for already-marginalized communities. Treat subgroup evaluation as a default step, not an afterthought.
+:::
+
+*Full citations are in the paper's reference list. TODO: link each dataset to its repository / download page.*

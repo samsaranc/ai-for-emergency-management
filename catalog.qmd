@@ -1,0 +1,119 @@
+---
+title: "Use-Case Catalog"
+subtitle: "Filter by category, EM phase, feasibility, and current AI use — then read the open problems. This is the project picker."
+page-layout: full
+toc: false
+resources:
+  - data/use_cases.csv
+---
+
+::: {.callout-note collapse="true"}
+## How to read this catalog
+
+Each row is a use case emergency managers raised, mapped to one of seven categories and the EM phase it touches. **Participants** is the number of interviewees who raised that category (out of 32). **Feasibility** is the authors' assessment of how well current AI capabilities match the need. **Open problems** is where you come in — it's the column that turns this from a table into a research agenda.
+
+The starter file ships with 20 grounded example rows spanning all seven categories. Add the remaining rows to `data/use_cases.csv`; the page updates automatically.
+:::
+
+```{ojs}
+//| echo: false
+data = FileAttachment("data/use_cases.csv").csv({typed: true})
+```
+
+::: {.cat-controls}
+```{ojs}
+//| echo: false
+viewof searched = Inputs.search(data, {
+  placeholder: "Search use cases, methods, open problems…",
+  width: 300
+})
+```
+
+```{ojs}
+//| echo: false
+viewof category = Inputs.select(
+  ["All", ...new Set(data.map(d => d.category))],
+  {label: "Category", value: "All"}
+)
+```
+
+```{ojs}
+//| echo: false
+viewof phase = Inputs.select(
+  ["All", "Mitigation", "Preparedness", "Response", "Recovery"],
+  {label: "EM phase", value: "All"}
+)
+```
+
+```{ojs}
+//| echo: false
+viewof feasibility = Inputs.select(
+  ["All", "High", "Moderate", "Mixed", "Low"],
+  {label: "Feasibility", value: "All"}
+)
+```
+
+```{ojs}
+//| echo: false
+viewof ai = Inputs.select(
+  ["All", "Yes", "Limited", "None"],
+  {label: "Current AI use", value: "All"}
+)
+```
+:::
+
+```{ojs}
+//| echo: false
+filtered = searched
+  .filter(d => category === "All" || d.category === category)
+  .filter(d => phase === "All" || (d.phase || "").includes(phase))
+  .filter(d => feasibility === "All" || (d.feasibility || "").startsWith(feasibility))
+  .filter(d => ai === "All" || d.current_ai === ai)
+```
+
+```{ojs}
+//| echo: false
+html`<div class="cat-count"><strong>${filtered.length}</strong> of ${data.length} use cases shown</div>`
+```
+
+```{ojs}
+//| echo: false
+{
+  const phaseClass = {
+    Mitigation: "chip-mitigate",
+    Preparedness: "chip-prepare",
+    Response: "chip-respond",
+    Recovery: "chip-recover"
+  };
+  const chips = (p) =>
+    (p || "").split("/").map(x => x.trim()).filter(Boolean).map(x =>
+      html`<span class="chip ${phaseClass[x] || ""}">${x}</span>`
+    );
+  const feasClass = (f) => "feas feas-" + (f || "").toLowerCase().split(" ")[0];
+
+  return html`<table class="cat-table">
+    <thead><tr>
+      <th>Use case</th>
+      <th>Category</th>
+      <th>Phase</th>
+      <th>Part.</th>
+      <th>Feasibility</th>
+      <th>AI now</th>
+      <th>Datasets / methods</th>
+      <th>Open problems</th>
+    </tr></thead>
+    <tbody>
+      ${filtered.map(d => html`<tr>
+        <td class="uc-name">${d.use_case}</td>
+        <td>${d.category}</td>
+        <td>${chips(d.phase)}</td>
+        <td class="num">${d.participants}</td>
+        <td><span class="${feasClass(d.feasibility)}">${d.feasibility}</span></td>
+        <td>${d.current_ai}</td>
+        <td class="meth">${d.datasets_methods}</td>
+        <td class="prob">${d.open_problems}</td>
+      </tr>`)}
+    </tbody>
+  </table>`;
+}
+```

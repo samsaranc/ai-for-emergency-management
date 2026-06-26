@@ -1,0 +1,32 @@
+---
+title: "Meet an EM"
+subtitle: "How to engage practitioners ethically — where to find them, what an observation involves, and the norms that keep the relationship intact."
+---
+
+The fastest way to build the wrong tool is to never talk to an emergency manager. The second fastest is to talk to them badly. This page is about doing it well.
+
+## Where to find them
+
+- **IAEM** — the International Association of Emergency Managers hosts an annual conference (with AI workshops) and regional chapters. A good first point of contact. TODO: link.
+- **State EM associations** — most states have one; they often maintain professional distribution lists. These were the backbone of recruitment for this study.
+- **Your university's EM connections** — campus emergency management, public-health, or robotics groups frequently have practitioner ties.
+- **LinkedIn + snowball referrals** — practical and how much of this study's sample was reached; ask each contact to refer one more.
+
+## Ways to observe (lowest to highest commitment)
+
+- **A conversation / interview** — 60–90 minutes. Use scenario-based prompts: ask them to walk through a *specific* incident they handled, then ask where technology could have helped. Concrete beats abstract every time.
+- **An EOC visit** — see the Emergency Operations Center and the tools (WebEOC, GIS) in their actual context.
+- **A tabletop exercise** — observe a simulated scenario. Exercises exist "because that's the perfect time to make mistakes," which also makes them a safe place to watch decision-making unfold.
+- **A ride-along** — the deepest immersion; arrange only through an established relationship.
+
+## Norms that matter
+
+::: {.callout-warning}
+## Come during blue sky, never during an activation
+EMs spend ~95% of their time in non-activated "blue sky" periods. That is when they have time for you. Reaching out during an active disaster is, at best, ignored — and at worst, an interruption to life-safety work. Time it accordingly.
+:::
+
+- **Their time is scarce and often unpaid-adjacent.** Many are departments of one. Be brief, be prepared, and make the value exchange explicit.
+- **Ground questions in their work, not your tool.** Start with their job and a real decision they made before introducing AI. This yields ecologically valid insight instead of speculation.
+- **They are accountable for outcomes.** "The AI told me to" is not a defense they can use in front of county commissioners. Respect that explainability and human authority are non-negotiable for them.
+- **Get IRB approval** for anything resembling research. This study ran under exempt status (Category 2: interviews and observation of public behavior). TODO: link your IRB resources.

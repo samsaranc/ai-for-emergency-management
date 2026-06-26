@@ -1,0 +1,170 @@
+/*-- scss:defaults --*/
+
+// Fonts: civic grotesque (display/UI), literary serif (body), console mono (data)
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+// Palette — "calm operations board"
+$ink:        #15202b;   // deep blue-slate (dark sections, headings)
+$ink-2:      #1d2a36;
+$paper:      #f4f6f5;   // cool off-white (not warm cream)
+$signal:     #0b6b73;   // deep teal — the single interaction accent
+$signal-2:   #0a565c;
+$line:       #d7dcda;   // hairlines
+$muted:      #5b6b6e;   // secondary text
+
+// EM phase colors — used ONLY as categorical chips (they encode the EM phase)
+$phase-mitigate: #3b6fb0;
+$phase-prepare:  #c98a2c;
+$phase-respond:  #c0492f;
+$phase-recover:  #5e9e6e;
+
+// Bootstrap / Quarto variable overrides
+$body-bg:                $paper;
+$body-color:             $ink;
+$link-color:             $signal;
+$link-hover-color:       $signal-2;
+$font-family-sans-serif: "Source Serif 4", Georgia, serif;          // body = readable serif
+$headings-font-family:   "Libre Franklin", -apple-system, system-ui, sans-serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+$headings-font-weight:   700;
+$navbar-bg:              $ink;
+$h1-font-size:           2.4rem;
+$border-radius:          6px;
+$toc-color:              $signal;
+
+/*-- scss:rules --*/
+
+body { font-size: 1.04rem; line-height: 1.62; }
+
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
+h2 { margin-top: 2.4rem; border-bottom: 1px solid $line; padding-bottom: .35rem; }
+
+// Mono "eyebrow" labels (the ops-board vernacular: UC1, FL3, MI1 …)
+.eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: $signal;
+}
+
+/* ---------- Hero (situation-report card) ---------- */
+.hero {
+  background: linear-gradient(160deg, $ink 0%, $ink-2 100%);
+  color: #eef2f1;
+  border-radius: 12px;
+  padding: 2.6rem 2.4rem 2.2rem;
+  margin: .5rem 0 2.4rem;
+  border: 1px solid #0c1620;
+}
+.hero .eyebrow { color: #67c2c9; }
+.hero-title {
+  color: #fff;
+  font-size: 2.6rem;
+  line-height: 1.08;
+  margin: .5rem 0 .6rem;
+  max-width: 22ch;
+}
+.hero .lede { font-size: 1.15rem; color: #c7d2d1; max-width: 60ch; }
+
+.readout {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .95rem;
+  color: #9fb0b0;
+  margin: 1.3rem 0 1.1rem;
+  letter-spacing: .01em;
+}
+.readout .rnum { color: #fff; font-weight: 600; }
+
+.skybar {
+  border-left: 3px solid #67c2c9;
+  background: rgba(103,194,201,.08);
+  padding: .7rem 1rem;
+  border-radius: 0 6px 6px 0;
+  font-size: .96rem;
+  color: #d6e0df;
+  margin-bottom: 1.5rem;
+}
+.skybar strong { color: #fff; }
+
+.btn-primary, .btn-ghost {
+  display: inline-block;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  font-size: .95rem;
+  padding: .6rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: .6rem;
+}
+.btn-primary { background: $signal; color: #fff !important; }
+.btn-primary:hover { background: #0d818b; }
+.btn-ghost { border: 1px solid #3a4a55; color: #d6e0df !important; }
+.btn-ghost:hover { border-color: #67c2c9; }
+
+/* ---------- "Start here" cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; }
+.card-link {
+  display: block; padding: 1.1rem 1.2rem; border: 1px solid $line;
+  border-radius: 8px; background: #fff; text-decoration: none; color: $ink;
+  transition: border-color .15s, transform .15s;
+}
+.card-link:hover { border-color: $signal; transform: translateY(-2px); }
+.card-link .ct { font-family: "Libre Franklin", sans-serif; font-weight: 700; color: $ink; }
+.card-link .cd { color: $muted; font-size: .92rem; margin-top: .25rem; }
+.card-link .cn { font-family: "IBM Plex Mono", monospace; font-size: .72rem; color: $signal; letter-spacing: .12em; }
+@media (max-width: 700px){ .cards { grid-template-columns: 1fr; } }
+
+/* ---------- Phase chips (categorical, functional) ---------- */
+.chip {
+  display: inline-block; font-family: "IBM Plex Mono", monospace;
+  font-size: .68rem; font-weight: 500; letter-spacing: .04em;
+  padding: .08rem .42rem; border-radius: 4px; margin: 1px 2px 1px 0;
+  color: #fff; white-space: nowrap;
+}
+.chip-mitigate { background: $phase-mitigate; }
+.chip-prepare  { background: $phase-prepare; }
+.chip-respond  { background: $phase-respond; }
+.chip-recover  { background: $phase-recover; }
+
+.phase-legend { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; font-size: .9rem; }
+.phase-legend .chip { font-size: .72rem; }
+
+/* ---------- Catalog ---------- */
+.cat-controls {
+  display: flex; flex-wrap: wrap; gap: .9rem 1.4rem; align-items: flex-end;
+  padding: 1rem 1.2rem; background: #fff; border: 1px solid $line;
+  border-radius: 8px; margin-bottom: 1rem;
+}
+.cat-controls .cell { margin: 0 !important; }
+.cat-count {
+  font-family: "IBM Plex Mono", monospace; font-size: .85rem; color: $muted;
+  margin: .4rem 0 .8rem;
+}
+.cat-count strong { color: $ink; }
+
+table.cat-table {
+  width: 100%; border-collapse: collapse; font-size: .9rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+table.cat-table thead th {
+  text-align: left; background: $ink; color: #fff; font-weight: 600;
+  font-size: .76rem; text-transform: uppercase; letter-spacing: .05em;
+  padding: .55rem .6rem; position: sticky; top: 0; z-index: 2;
+}
+table.cat-table tbody td { padding: .6rem; border-bottom: 1px solid $line; vertical-align: top; }
+table.cat-table tbody tr:nth-child(odd) { background: #fbfcfb; }
+table.cat-table .uc-name { font-weight: 600; color: $ink; min-width: 12rem; }
+table.cat-table .num { font-family: "IBM Plex Mono", monospace; text-align: center; }
+table.cat-table .meth { color: $muted; font-size: .85rem; }
+table.cat-table .prob { font-family: "Source Serif 4", serif; font-size: .88rem; min-width: 16rem; }
+
+.feas { font-family: "IBM Plex Mono", monospace; font-size: .74rem; font-weight: 600;
+  padding: .1rem .4rem; border-radius: 4px; white-space: nowrap; }
+.feas-high     { background: #e4f1e7; color: #2f6b3e; }
+.feas-moderate { background: #fdf1de; color: #8a5a18; }
+.feas-mixed    { background: #eae6f3; color: #5b4a86; }
+.feas-low      { background: #f6e2dd; color: #9a3b27; }
+
+/* Quieten Quarto's default callout a touch */
+.callout { border-radius: 8px; }

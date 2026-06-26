@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "AI for Emergency Management Resources"
+  description: >-
+    Companion to the FAccT '26 paper: 136 use cases for AI in emergency
+    management and disaster response — a research agenda and resource guide
+    with AI Use Cases across damage assessment, and situational awareness.
+  site-url: "https://samsaranc.github.io/ai-for-emergency-management/"
+  open-graph: true
+  navbar:
+    background: dark
+    pinned: true
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Use-Case Catalog"
+        href: catalog.qmd
+      - text: "Datasets"
+        href: datasets.qmd
+      - text: "Domain Literacy"
+        href: literacy.qmd
+      - text: "Meet an EM"
+        href: meet-an-em.qmd
+      - text: "Anti-Patterns"
+        href: anti-patterns.qmd
+      - text: "Instruments"
+        href: instruments.qmd
+    right:
+      - icon: file-earmark-text
+        text: "Paper"
+        href: "https://doi.org/10.1145/3805689.3812279"
+      - icon: github
+        href: "https://github.com/samsaranc/ai-for-emergency-management"
+  page-footer:
+    border: true
+    left: "Companion to *Investigating the Role of AI in Emergency Management* · FAccT '26."
+    right: "Built with [Quarto](https://quarto.org) · text CC BY 4.0."
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    toc-depth: 2
+    code-copy: true
+    link-external-newwindow: true
+    grid:
+      body-width: 880px

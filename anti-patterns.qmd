@@ -1,0 +1,47 @@
+---
+title: "Anti-Patterns"
+subtitle: "The rabbit holes. Well-meaning newcomers tend to rebuild these mistakes within their first month — here's why to avoid them."
+---
+
+These are not "hard problems worth tackling." They are problems where the binding constraint is *not* AI capability, so an AI-first approach predictably fails. Read this before scoping a project.
+
+## 1. EOC activation prediction
+
+Building a model that decides *when* to activate an Emergency Operations Center.
+
+**Why it's a trap:** there are ~1,400 counties in the U.S., and essentially every one has different activation criteria. Activation decisions turn on liability, elected-official preferences, political pressure, resource availability, and community expectations — factors that don't reduce to algorithmic rules. Any tool is either too rigid to fit local variation or too vague to be actionable.
+
+## 2. Autonomous decision systems for life-safety
+
+Systems that decide and act without a human in the loop.
+
+**Why it's a trap:** participants were unanimous — EM AI must preserve human decision-making authority. Acceptable autonomy tops out at *AI suggests, human approves* (Levels 1–2). No one wanted autonomous action for life-safety, because the human remains legally and politically accountable regardless of what the system recommended. Design for the operator and the collaborator, not the autonomous agent.
+
+## 3. Misinformation-detection overpromises
+
+Real-time AI that detects and flags false information during a crisis.
+
+**Why it's a trap:** misinformation spreads faster than verification is possible, classifier accuracy drops sharply on novel claims, and false positives risk suppressing legitimate community-sourced intelligence. Ground truth itself is often uncertain during an active event. Promise message *drafting* (tractable); be very cautious about misinfo *detection* (not).
+
+## 4. Adding data streams without synthesis
+
+"Let's give them one more dashboard / feed / alert source."
+
+**Why it's a trap:** the core complaint is *drowning in data* without synthesis. Adding inputs without filtering, prioritizing, and summarizing makes the fundamental problem worse. Reduce cognitive load or don't ship.
+
+## 5. Assuming reliable infrastructure
+
+Cloud-dependent tools that need power, cell, and internet.
+
+**Why it's a trap:** response and recovery happen precisely when infrastructure fails. A tool that's unavailable during the disaster is unavailable when it matters. Design and test for degraded conditions — intermittent connectivity, partial data, stressed users.
+
+## 6. Treating EMs as data sources, not partners
+
+Extracting labels and requirements, then disappearing.
+
+**Why it's a trap:** it risks deskilling the very expertise the system depends on, and it produces tools that fail on contact with real workflows. Bring practitioners into design, not just data collection.
+
+::: {.callout-tip}
+## The pattern behind the patterns
+Before scoping, ask: *is the binding constraint here AI capability, or is it interoperability, accountability, infrastructure, or institutions?* If it's the latter, no model fixes it — and that's worth knowing on day one.
+:::
