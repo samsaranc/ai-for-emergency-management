@@ -2,21 +2,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Investigating the Role of AI in Emergency Management",
+    "title": "AI for Emergency Management — Resources for Researchers",
     "section": "",
-    "text": "COMPANION // FAccT ’26\n\n\nUse cases, challenges, and opportunities — turned into a project picker and onboarding kit for computing researchers.\n\n32 interviewed emergency managers ·  7 use-case categories ·  136 specific use cases\n\nOpen the catalog → Read the paper"
+    "text": "COMPANION // FAccT ’26\n\n\nUse cases, challenges, and opportunities from Investigating the Role of AI in Emergency Management — turned into a project picker and onboarding kit for academic researchers who want to support emergency management problems.\n\n32 interviewed emergency managers ·  7 use-case categories ·  136 specific use cases\n\nOpen the catalog → Read the paper"
   },
   {
     "objectID": "index.html#start-here",
     "href": "index.html#start-here",
-    "title": "Investigating the Role of AI in Emergency Management",
+    "title": "AI for Emergency Management — Resources for Researchers",
     "section": "Start here",
     "text": "Start here\n\n 01 / CATALOG\n\nUse-Case Catalog\n\n\nAll 136 use cases, filterable by category, EM phase, feasibility, and current AI use — each with an “open problems” column.\n\n  02 / DATA\n\nDatasets Starter Pack\n\n\nxBD, HumAID, CrisisBench, CrisisLex, CrisisTransformers — with their known geographic and linguistic biases noted up front.\n\n  03 / DOCTRINE\n\nDomain Literacy\n\n\nNIMS/ICS, the Whole Community doctrine, EMAP standards, a sample ICS-201/IAP, and the staffing + funding evidence base.\n\n  04 / PEOPLE\n\nMeet an EM\n\n\nHow to engage practitioners ethically: where to find them, what a ride-along or tabletop involves, and the norms that matter.\n\n  05 / PITFALLS\n\nAnti-Patterns\n\n\nThe rabbit holes — activation prediction, autonomous life-safety decisions, misinformation-detection overpromises — and why.\n\n  06 / METHOD\n\nReusable Instruments\n\n\nThe interview protocol and codebook, offered for replication — including the international extension the paper invites."
   },
   {
     "objectID": "index.html#the-four-phases",
     "href": "index.html#the-four-phases",
-    "title": "Investigating the Role of AI in Emergency Management",
+    "title": "AI for Emergency Management — Resources for Researchers",
     "section": "The four phases",
     "text": "The four phases\nEmergency management runs on a cyclical four-phase model. Throughout this companion, phase chips mark which part of the cycle a use case touches.\n\nMitigation Preparedness Response Recovery\n\n\n\n\n\n\n\nTipHow to cite\n\n\n\nFoubert, S., Park, M., Pardeshi, K. S., Manzini, T., McDaniel, R., Merrick, D., Murphy, R., Singh, A., & Heidari, H. (2026). Investigating the Role of AI in Emergency Management: Use Cases, Challenges, and Opportunities. FAccT ’26. https://doi.org/10.1145/3805689.3812279"
   },
@@ -109,35 +109,7 @@
     "href": "datasets.html",
     "title": "Datasets Starter Pack",
     "section": "",
-    "text": "Start here instead of from scratch. Each of these is mature enough to build on, and each carries a known limitation that will quietly shape your results if you ignore it. The point of this page is to start with eyes open."
-  },
-  {
-    "objectID": "datasets.html#damage-assessment-computer-vision",
-    "href": "datasets.html#damage-assessment-computer-vision",
-    "title": "Datasets Starter Pack",
-    "section": "Damage assessment (computer vision)",
-    "text": "Damage assessment (computer vision)\nxBD — the anchor benchmark for building-damage assessment from satellite imagery: over 850,000 building annotations across roughly 45,000 km² spanning six disaster types.\n\n⚠️ Known bias: damage-assessment models show reduced performance on Global South contexts. Evaluate across geographic subgroups before claiming generality.\n\n\nxBD: A Dataset for Assessing Building Damage from Satellite Imagery (Gupta et al., 2019) Paper\nRelated:\n\nU-Net: Convolutional Networks for Biomedical Image Segmentation (Ronneberger et al., 2015) Paper\nLarge-scale Building Damage Assessment using a Novel Hierarchical Transformer Architecture on Satellite Images (Kaur et al., 2023) Paper"
-  },
-  {
-    "objectID": "datasets.html#crisis-nlp-text-classification",
-    "href": "datasets.html#crisis-nlp-text-classification",
-    "title": "Datasets Starter Pack",
-    "section": "Crisis NLP (text classification)",
-    "text": "Crisis NLP (text classification)\n\nHumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks (Alam et al., 2021) Paper Dataset\nCrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing (Alam et al. 2021) Paper Dataset\nCrisisLex: A Lexicon for Collecting and Filtering Microblogged Communications in Crises (Olteanu et al., 2014) Paper Website\n\n\n\n\n\n⚠️ Known bias: crisis NLP corpora are predominantly English-centric. Performance for non-English and code-switched messages is largely unmeasured."
-  },
-  {
-    "objectID": "datasets.html#domain-specific-language-models",
-    "href": "datasets.html#domain-specific-language-models",
-    "title": "Datasets Starter Pack",
-    "section": "Domain-specific language models",
-    "text": "Domain-specific language models\nCrisisTransformers — pretrained language models and sentence encoders for crisis-related text; reported to outperform general-purpose models by roughly 10–17% on crisis-classification tasks (Lamsal et al., 2024).\nCrisisTransformers: Pre-trained language models and sentence encoders for crisis-related social media texts (Lamsal et al., 2024) Paper Models\n\nUseful when general LLMs underperform on short, noisy, disaster-specific text."
-  },
-  {
-    "objectID": "datasets.html#search-and-rescue-aerial-imagery",
-    "href": "datasets.html#search-and-rescue-aerial-imagery",
-    "title": "Datasets Starter Pack",
-    "section": "Search and rescue (aerial imagery)",
-    "text": "Search and rescue (aerial imagery)\nDeep-learning approaches to aerial-imagery analysis and reinforcement-learning search-pattern optimization are technically well established. Some examples: - Deep Learning Approach in Aerial Imagery for Supporting Land Search and Rescue Missions (Božić-Štulić et al., 2019) Paper - UAV-Based Real-Time Survivor Detection System in Post-Disaster Search and Rescue Operations (Dong et al., 2021) Paper - Deep reinforcement learning for time-critical wilderness search and rescue using drones (Ewers et al., 2025) Paper\n\n⚠️ Known bias: publicly available SAR imagery datasets are geographically limited to European terrain. Models may not transfer to other landscapes.\n\n\n\n\n\n\n\nImportantThe cross-cutting lesson\n\n\n\nTraining-data biases — the geographic limits of damage datasets, the English-centricity of crisis NLP — risk creating systems that perform worst for already-marginalized communities. Treat subgroup evaluation as a default step, not an afterthought.\n\n\nFull citations are in the paper’s reference list. TODO: link each dataset to its repository / download page."
+    "text": "NoteMore coming soon\n\n\n\nThis page is being rebuilt. We’re putting together a curated, vetted starter pack of datasets and benchmarks for crisis AI — each with its known limitations and biases flagged up front, the same way the rest of this site treats sourcing.\nCheck back soon, or open an issue at https://github.com/samsaranc/ai-for-emergency-management/issues if there’s a dataset you think belongs here."
   },
   {
     "objectID": "instruments.html",
@@ -182,17 +154,24 @@
     "text": "Operating doctrine\n\nNIMS / ICS — the National Incident Management System and Incident Command System are the standardized frameworks (mandated by presidential directive after 9/11) that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters. National Incident Management System, 3rd ed. (DHS/FEMA, 2017). Link\nThe Whole Community approach — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it’s foundational. A Whole Community Approach to Emergency Management (FEMA, 2011). Link"
   },
   {
-    "objectID": "literacy.html#standards-and-forms",
-    "href": "literacy.html#standards-and-forms",
-    "title": "Domain Literacy",
-    "section": "Standards and forms",
-    "text": "Standards and forms\n\nEMAP — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against ANSI/EMAP 5-2022. This matters for AI: it gives you objective ground truth for any plan-analysis tool.\nICS forms — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The ICS-201 (Incident Briefing) and the Incident Action Plan (IAP) are the ones you’ll hear about most.\n\nICS forms\nSample ICS-201\nSample IAP template"
-  },
-  {
     "objectID": "literacy.html#why-this-matters-the-evidence-base",
     "href": "literacy.html#why-this-matters-the-evidence-base",
     "title": "Domain Literacy",
     "section": "Why this matters (the evidence base)",
     "text": "Why this matters (the evidence base)\nThe field is chronically under-resourced — which is exactly why pragmatic, imperfect tools are welcome here.\n\n\n\nFinding\nSource\n\n\n\n\n57% of local EM agencies run on one or fewer full-time employees\nArgonne / NPAC staffing study, 2025 Link\n\n\n56% of directors are “dual-hatting” (EM is not their only job)\nArgonne / NPAC, 2025 Link\n\n\n15% of local director positions are unpaid volunteers\nArgonne / NPAC, 2025 Link\n\n\nState EM budgets range $500K–$530M; median under $10M\nDeloitte–NEMA National Risk Study, 2025 Link\n\n\nAgencies want AI but call commercial offerings “not quite there yet”\nDeloitte–NEMA, 2025 Link\n\n\nBurnout exceeds 50% among emergency-services personnel\nPatel et al., 2023 Link\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe takeaway from this table is not “EM is sad.” It’s that the bar for useful is low and the appetite is high — a domain where a “good enough” tool that saves real hours is genuinely valued."
+  },
+  {
+    "objectID": "literacy.html#credentialing-to-understand-the-domain",
+    "href": "literacy.html#credentialing-to-understand-the-domain",
+    "title": "Domain Literacy",
+    "section": "Credentialing to understand the domain",
+    "text": "Credentialing to understand the domain\nYou don’t need to get certified to do this research, but the entry-level FEMA courses are short (a few hours each, free, online), and working through them is the fastest way to pick up the vocabulary and structure practitioners take for granted.\n\nIS-100 — Introduction to the Incident Command System (ICS 100). Course\nIS-200 — ICS for Single Resources and Initial Action Incidents. Course\nIS-700 — An Introduction to the National Incident Management System (NIMS). Course\nIS-800 — National Response Framework, An Introduction. Course\nIS-5.a — An Introduction to Hazardous Materials. Course\nEmergency Medical Responder (EMR) — entry-level EMS certification; useful background for response-phase use cases. NREMT overview\nHAZWOPER / Hazmat Awareness — OSHA’s hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. OSHA overview\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: confirm current version letters for the IS courses above (FEMA periodically revises them) and add any additional credentials worth flagging here."
+  },
+  {
+    "objectID": "literacy.html#standards-and-forms",
+    "href": "literacy.html#standards-and-forms",
+    "title": "Domain Literacy",
+    "section": "Standards and forms",
+    "text": "Standards and forms\n\nEMAP — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against ANSI/EMAP 5-2022. This matters for AI: it gives you objective ground truth for any plan-analysis tool.\nICS forms — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The ICS-201 (Incident Briefing) and the Incident Action Plan (IAP) are the ones you’ll hear about most.\n\nICS forms\nSample ICS-201\nSample IAP template"
   }
 ]
