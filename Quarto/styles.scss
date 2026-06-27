@@ -136,6 +136,9 @@ h2 { margin-top: 2.4rem; border-bottom: 1px solid $line; padding-bottom: .35rem;
   border-radius: 8px; margin-bottom: 1rem;
 }
 .cat-controls .cell { margin: 0 !important; }
+.cat-controls input, .cat-controls select, .cat-controls textarea {
+  font-family: "Libre Franklin", -apple-system, system-ui, sans-serif;
+}
 .cat-count {
   font-family: "IBM Plex Mono", monospace; font-size: .85rem; color: $muted;
   margin: .4rem 0 .8rem;
