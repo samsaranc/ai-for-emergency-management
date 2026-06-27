@@ -17,7 +17,7 @@ The starter file ships with 20 grounded example rows spanning all seven categori
 
 ```{ojs}
 //| echo: false
-data = FileAttachment("../Data/use_cases.csv").csv({typed: true})
+data = FileAttachment("../data/use_cases.csv").csv({typed: true})
 ```
 
 ::: {.cat-controls}
