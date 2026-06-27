@@ -11,18 +11,18 @@ Start here instead of from scratch. Each of these is mature enough to build on, 
 
 > ⚠️ **Known bias:** damage-assessment models show reduced performance on Global South contexts. Evaluate across geographic subgroups before claiming generality.
 
-- xBD: A Dataset for Assessing Building Damage from Satellite Imagery (Gupta et al., 2019) | ([Paper](https://arxiv.org/abs/1911.09296)).
-- Related: 
-    - U-Net: Convolutional Networks for Biomedical Image Segmentation (Ronneberger et al., 2015) | ([Paper](https://arxiv.org/abs/1505.04597)).
-    - Large-scale Building Damage Assessment using a Novel Hierarchical Transformer Architecture on Satellite Images (Kaur et al., 2023) | ([Paper](https://arxiv.org/abs/2208.02205)) for architectural baselines.
+- xBD: A Dataset for Assessing Building Damage from Satellite Imagery (Gupta et al., 2019)   [Paper](https://arxiv.org/abs/1911.09296){.btn .btn-outline-primary .btn-sm}
+- Related:
+    - U-Net: Convolutional Networks for Biomedical Image Segmentation (Ronneberger et al., 2015)   [Paper](https://arxiv.org/abs/1505.04597){.btn .btn-outline-primary .btn-sm}
+    - Large-scale Building Damage Assessment using a Novel Hierarchical Transformer Architecture on Satellite Images (Kaur et al., 2023)   [Paper](https://arxiv.org/abs/2208.02205){.btn .btn-outline-primary .btn-sm} for architectural baselines.
 
 <!-- U-Net (Ronneberger et al., 2015) and transformer-based damage models (Kaur et al., 2023) for architecture baselines. -->
 
 ## Crisis NLP (text classification)
 
-- HumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks (Alam et al., 2021) | ([Paper](https://arxiv.org/abs/2104.03090)), | ([Dataset](https://crisisnlp.qcri.org/humaid_dataset.html))
-- CrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing (Alam et al. 2021) | ([Paper](https://arxiv.org/abs/2004.06774)), | ([Dataset](https://crisisnlp.qcri.org/crisis_datasets_benchmarks.html))
-- CrisisLex: A Lexicon for Collecting and Filtering Microblogged Communications in Crises  (Olteanu et al., 2014) | ([Paper](https://ojs.aaai.org/index.php/ICWSM/article/view/14538)) | ([Website](https://crisislex.org/))
+- HumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks (Alam et al., 2021)   [Paper](https://arxiv.org/abs/2104.03090){.btn .btn-outline-primary .btn-sm} [Dataset](https://crisisnlp.qcri.org/humaid_dataset.html){.btn .btn-outline-secondary .btn-sm}
+- CrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing (Alam et al. 2021)   [Paper](https://arxiv.org/abs/2004.06774){.btn .btn-outline-primary .btn-sm} [Dataset](https://crisisnlp.qcri.org/crisis_datasets_benchmarks.html){.btn .btn-outline-secondary .btn-sm}
+- CrisisLex: A Lexicon for Collecting and Filtering Microblogged Communications in Crises (Olteanu et al., 2014)   [Paper](https://ojs.aaai.org/index.php/ICWSM/article/view/14538){.btn .btn-outline-primary .btn-sm} [Website](https://crisislex.org/){.btn .btn-outline-secondary .btn-sm}
 
 
 <!-- **HumAID** — human-annotated disaster tweets with deep-learning benchmarks (Alam et al., 2021). -->
@@ -36,16 +36,16 @@ Start here instead of from scratch. Each of these is mature enough to build on, 
 
 **CrisisTransformers** — pretrained language models and sentence encoders for crisis-related text; reported to outperform general-purpose models by roughly 10–17% on crisis-classification tasks (Lamsal et al., 2024).
 
-CrisisTransformers: : Pre-trained language models and sentence encoders for crisis-related social media texts (Lamsal et al., 2024) | ([Paper](https://dl.acm.org/doi/10.1016/j.knosys.2024.111916)) | ([Models](https://huggingface.co/crisistransformers))
+CrisisTransformers: Pre-trained language models and sentence encoders for crisis-related social media texts (Lamsal et al., 2024)   [Paper](https://dl.acm.org/doi/10.1016/j.knosys.2024.111916){.btn .btn-outline-primary .btn-sm} [Models](https://huggingface.co/crisistransformers){.btn .btn-outline-secondary .btn-sm}
 
 - Useful when general LLMs underperform on short, noisy, disaster-specific text.
 
 ## Search and rescue (aerial imagery)
 
 Deep-learning approaches to aerial-imagery analysis and reinforcement-learning search-pattern optimization are technically well established. Some examples:
-- Deep Learning Approach in Aerial Imagery for Supporting Land Search and Rescue Missions (Božić-Štulić et al., 2019) | ([Paper](https://dl.acm.org/doi/abs/10.1007/s11263-019-01177-1))
-- UAV-Based Real-Time Survivor Detection System in Post-Disaster Search and Rescue Operations (Dong et al., 2021) | ([Paper](https://ieeexplore.ieee.org/document/9440534))
-- Deep reinforcement learning for time-critical wilderness search and rescue using drones (Ewers et al., 2025) | ([Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11831046/))
+- Deep Learning Approach in Aerial Imagery for Supporting Land Search and Rescue Missions (Božić-Štulić et al., 2019)   [Paper](https://dl.acm.org/doi/abs/10.1007/s11263-019-01177-1){.btn .btn-outline-primary .btn-sm}
+- UAV-Based Real-Time Survivor Detection System in Post-Disaster Search and Rescue Operations (Dong et al., 2021)   [Paper](https://ieeexplore.ieee.org/document/9440534){.btn .btn-outline-primary .btn-sm}
+- Deep reinforcement learning for time-critical wilderness search and rescue using drones (Ewers et al., 2025)   [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11831046/){.btn .btn-outline-primary .btn-sm}
 
 > ⚠️ **Known bias:** publicly available SAR imagery datasets are geographically limited to European terrain. Models may not transfer to other landscapes.
 
