@@ -5,14 +5,6 @@ subtitle: "The doctrine, standards, and evidence base you need to talk to emerge
 
 You don't need to become an emergency manager. You do need to recognize the frameworks they live inside, because those frameworks determine what a deployable system even looks like.
 
-## Operating doctrine
-
-- **NIMS / ICS** — the National Incident Management System and Incident Command System are the standardized frameworks (mandated by presidential directive after 9/11) that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters.
-    *National Incident Management System*, 3rd ed. (DHS/FEMA, 2017). [Link](https://training.fema.gov/emiweb/is/is700b/handouts/national_incident_management%20system_third%20edition_october_2017.pdf){.btn .btn-outline-primary .btn-sm}
-
-- **The Whole Community approach** — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it's foundational.
-    *A Whole Community Approach to Emergency Management* (FEMA, 2011). [Link](https://www.fema.gov/sites/default/files/2023-04/whole-community-approach-to-emergency-management.pdf){.btn .btn-outline-primary .btn-sm}
-
 ## Why this matters (the evidence base)
 
 The field is chronically under-resourced — which is exactly why pragmatic, imperfect tools are welcome here.
@@ -29,6 +21,14 @@ The field is chronically under-resourced — which is exactly why pragmatic, imp
 ::: {.callout-note}
 The takeaway from this table is not "EM is sad." It's that the bar for *useful* is low and the appetite is high — a domain where a "good enough" tool that saves real hours is genuinely valued.
 :::
+
+## Operating doctrine
+
+- **NIMS / ICS** — the National Incident Management System and Incident Command System are the standardized frameworks that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters.
+    *National Incident Management System*, 3rd ed. (DHS/FEMA, 2017). [Link](https://training.fema.gov/emiweb/is/is700b/handouts/national_incident_management%20system_third%20edition_october_2017.pdf){.btn .btn-outline-primary .btn-sm}
+
+- **The Whole Community approach** — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it's foundational.
+    *A Whole Community Approach to Emergency Management* (FEMA, 2011). [Link](https://www.fema.gov/sites/default/files/2023-04/whole-community-approach-to-emergency-management.pdf){.btn .btn-outline-primary .btn-sm}
 
 ## Credentialing to understand the domain
 
