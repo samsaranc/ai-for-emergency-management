@@ -15,10 +15,6 @@ page-layout: full
 [32]{.rnum} interviewed emergency managers&nbsp;·&nbsp; [7]{.rnum} use-case categories&nbsp;·&nbsp; [136]{.rnum} specific use cases
 :::
 
-::: {.skybar}
-**~95%** of an emergency manager's time is "blue sky" — non-activated. Yet most tools target the other 5%. Build for the 95%.
-:::
-
 [Open the catalog →](catalog.qmd){.btn-primary} [Read the paper](https://doi.org/10.1145/3805689.3812279){.btn-ghost}
 :::
 
