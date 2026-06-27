@@ -7,7 +7,7 @@ The study deliberately focused on U.S. emergency managers operating under U.S. d
 
 ## What's here
 
-- **Interview protocol** — the full semi-structured script (background → decision scenarios → resource-constrained scenarios → protective-action and evacuation scenarios → improvement opportunities → recovery-center planning).
+- [**Interview protocol**](pdfs/interview-protocol.pdf) — the full semi-structured script (background → decision scenarios → resource-constrained scenarios → protective-action and evacuation scenarios → improvement opportunities → recovery-center planning).
 - **Pre-interview questionnaire** — AI-familiarity items adapted from the Pew Research Center's survey, plus optional demographics.
 - **Codebook (v3.0)** — five top-level themes: Decision-Making Scenarios, Technology Use Cases, EM Context, Current Tech Usage, and Future Tech Imaginings.
 
