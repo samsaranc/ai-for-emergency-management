@@ -7,7 +7,7 @@ The fastest way to build the wrong tool is to never talk to an emergency manager
 
 ## Where to find them
 
-- **IAEM** — the International Association of Emergency Managers hosts an annual conference (with AI workshops) and regional chapters. A good first point of contact. TODO: link.
+- **IAEM** — the International Association of Emergency Managers hosts an annual conference (with AI workshops) and regional chapters. A good first point of contact. [Website](https://www.iaem.org/){.btn .btn-outline-primary .btn-sm}
 - **State EM associations** — most states have one; they often maintain professional distribution lists. These were the backbone of recruitment for this study.
 - **Your university's EM connections** — campus emergency management, public-health, or robotics groups frequently have practitioner ties.
 - **LinkedIn + snowball referrals** — practical and how much of this study's sample was reached; ask each contact to refer one more.
@@ -29,4 +29,3 @@ EMs spend ~95% of their time in non-activated "blue sky" periods. That is when t
 - **Their time is scarce and often unpaid-adjacent.** Many are departments of one. Be brief, be prepared, and make the value exchange explicit.
 - **Ground questions in their work, not your tool.** Start with their job and a real decision they made before introducing AI. This yields ecologically valid insight instead of speculation.
 - **They are accountable for outcomes.** "The AI told me to" is not a defense they can use in front of county commissioners. Respect that explainability and human authority are non-negotiable for them.
-- **Get IRB approval** for anything resembling research. This study ran under exempt status (Category 2: interviews and observation of public behavior). TODO: link your IRB resources.

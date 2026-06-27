@@ -46,10 +46,6 @@ The entry-level FEMA courses are short (a few hours each), free, and online — 
 - **IS-800** — National Response Framework, An Introduction. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-800.d){.btn .btn-outline-primary .btn-sm}
 - **IS-5.a** — An Introduction to Hazardous Materials. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-5.a){.btn .btn-outline-primary .btn-sm}
 
-::: {.callout-note}
-TODO: confirm current version letters for the IS courses above (FEMA periodically revises them) and add any additional credentials worth flagging here.
-:::
-
 ### Commitment required
 
 These go well beyond an afternoon — most run multiple days in person and require hands-on skills practice, not just reading. Most hazard-specific disciplines (hazmat, swiftwater, rope, trench, confined space, etc.) are structured around the same three-tier progression:
@@ -62,11 +58,7 @@ Each tier builds on the last, and most jurisdictions require Technician-level tr
 
 - **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
 - **HAZWOPER / Hazmat Awareness** — OSHA's hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. [OSHA overview](https://www.osha.gov/hazwoper){.btn .btn-outline-primary .btn-sm}
-- **Swiftwater Awareness** — recognizing flood and fast-water hazards, relevant to flood-response use cases.
-- **Trench Rescue Awareness** — recognizing collapse and excavation hazards.
-- **Rope Rescue Awareness** — recognizing high-angle and rope-access hazards.
-- **Confined Space Awareness** — recognizing atmospheric and entrapment hazards in confined spaces.
-
-::: {.callout-note}
-TODO: source authoritative course links for Swiftwater, Trench Rescue, Rope Rescue, and Confined Space Awareness (these are typically offered through state fire academies or NFPA-aligned training providers rather than a single national source).
-:::
+- **Swiftwater Awareness** — recognizing flood and fast-water hazards, relevant to flood-response use cases. [Course](https://teex.org/class/tng80a/){.btn .btn-outline-primary .btn-sm}
+- **Trench Rescue Awareness** — recognizing collapse and excavation hazards. [Course](https://teex.org/class/res120/){.btn .btn-outline-primary .btn-sm}
+- **Rope Rescue Awareness** — recognizing high-angle and rope-access hazards. [Course](https://teex.org/class/xtn098/){.btn .btn-outline-primary .btn-sm}
+- **Confined Space Awareness** — recognizing atmospheric and entrapment hazards in confined spaces. [Course](https://teex.org/class/www352/){.btn .btn-outline-primary .btn-sm}
