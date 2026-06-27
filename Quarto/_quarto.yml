@@ -20,10 +20,10 @@ website:
         href: index.qmd
       - text: "Use-Case Catalog"
         href: catalog.qmd
-      - text: "Datasets"
-        href: datasets.qmd
       - text: "Getting Start in EM"
         menu:
+          - text: "Datasets and Models"
+            href: datasets.qmd
           - text: "Domain Literacy"
             href: literacy.qmd
           - text: "Meet an EM"
