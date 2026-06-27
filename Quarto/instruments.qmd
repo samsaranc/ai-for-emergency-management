@@ -15,6 +15,8 @@ The study deliberately focused on U.S. emergency managers operating under U.S. d
 TODO: drop the protocol and codebook here as downloadable files — e.g. `instruments/interview-protocol.pdf` and `instruments/codebook.pdf` — and deposit them on OSF for a citable DOI. The paper's Appendix E (protocol) and Table 3 (codebook) are the source.
 :::
 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4DD1EJGaoS9OQI97bBk_8H9lFCCeSywdwUMC-kxUuxkFyUs4fNkHtj-4RvlAyY-hQS4kyRc95Zp4-/pubhtml?gid=958048563&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
 ## Design choices worth reusing
 
 - **Funnel structure** — open with their background and a real disaster they handled; introduce technology and AI only later. Grounding participants in concrete experience before speculation yields more valid responses.

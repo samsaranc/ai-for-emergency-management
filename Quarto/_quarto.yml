@@ -20,7 +20,7 @@ website:
         href: catalog.qmd
       - text: "Datasets"
         href: datasets.qmd
-      - text: "More"
+      - text: "Getting Start in EM"
         menu:
           - text: "Domain Literacy"
             href: literacy.qmd
@@ -30,6 +30,8 @@ website:
             href: anti-patterns.qmd
           - text: "Instruments"
             href: instruments.qmd
+          - text: "Additional Resources"
+            href: "https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link"
     # right:
       - icon: file-earmark-text
         text: "Paper"
