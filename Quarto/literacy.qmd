@@ -7,21 +7,22 @@ You don't need to become an emergency manager. You do need to recognize the fram
 
 ## Operating doctrine
 
-**NIMS / ICS** — the National Incident Management System and Incident Command System are the standardized frameworks (mandated by presidential directive after 9/11) that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters.
+- **NIMS / ICS** — the National Incident Management System and Incident Command System are the standardized frameworks (mandated by presidential directive after 9/11) that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters.
+    *National Incident Management System*, 3rd ed. (DHS/FEMA, 2017). [Link](https://training.fema.gov/emiweb/is/is700b/handouts/national_incident_management%20system_third%20edition_october_2017.pdf){.btn .btn-outline-primary .btn-sm}
 
-- *National Incident Management System*, 3rd ed. (DHS/FEMA, 2017). TODO: link.
-
-**The Whole Community approach** — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it's foundational.
-
-- *A Whole Community Approach to Emergency Management* (FEMA, 2011). TODO: link.
+- **The Whole Community approach** — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it's foundational.
+    *A Whole Community Approach to Emergency Management* (FEMA, 2011). [Link](https://www.fema.gov/sites/default/files/2023-04/whole-community-approach-to-emergency-management.pdf){.btn .btn-outline-primary .btn-sm}
 
 ## Standards and forms
 
-**EMAP** — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against (ANSI/EMAP 5-2022). This matters for AI: it gives you objective ground truth for any plan-analysis tool.
+- **EMAP** — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against [ANSI/EMAP 5-2022](https://emap.org/wp-content/uploads/2023/04/EMAP-EMS-5-2022-Emergency-Management-Standard.pdf). This matters for AI: it gives you objective ground truth for any plan-analysis tool.
 
-**ICS forms** — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The **ICS-201** (Incident Briefing) and the **Incident Action Plan (IAP)** are the ones you'll hear about most.
+- **ICS forms** — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The **ICS-201** (Incident Briefing) and the **Incident Action Plan (IAP)** are the ones you'll hear about most.
+    - [ICS forms](https://training.fema.gov/icsresource/icsforms.aspx)
+    - [Sample ICS-201](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20201,%20incident%20briefing%20(v3).pdf)
+    - [Sample IAP template](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20215a,%20incident%20action%20plan%20safety%20analysis%20(v3).pdf)
 
-- TODO: link a sample blank ICS-201 and an IAP template.
+<!-- - TODO: link a sample blank ICS-201 and an IAP template. -->
 
 ## Why this matters (the evidence base)
 
@@ -29,12 +30,12 @@ The field is chronically under-resourced — which is exactly why pragmatic, imp
 
 | Finding | Source |
 |---|---|
-| 57% of local EM agencies run on **one or fewer** full-time employees | Argonne / NPAC staffing study, 2025 |
-| 56% of directors are "dual-hatting" (EM is not their only job) | Argonne / NPAC, 2025 |
-| 15% of local director positions are **unpaid volunteers** | Argonne / NPAC, 2025 |
-| State EM budgets range \$500K–\$530M; **median under \$10M** | Deloitte–NEMA National Risk Study, 2025 |
-| Agencies want AI but call commercial offerings "not quite there yet" | Deloitte–NEMA, 2025 |
-| Burnout exceeds 50% among emergency-services personnel | Patel et al., 2023 |
+| 57% of local EM agencies run on **one or fewer** full-time employees | Argonne / NPAC staffing study, 2025 [Link](https://www.anl.gov/dis/npac/EMStudy){.btn .btn-outline-primary .btn-sm} |
+| 56% of directors are "dual-hatting" (EM is not their only job) | Argonne / NPAC, 2025 [Link](https://www.anl.gov/dis/npac/EMStudy){.btn .btn-outline-primary .btn-sm} |
+| 15% of local director positions are **unpaid volunteers** | Argonne / NPAC, 2025 [Link](https://www.anl.gov/dis/npac/EMStudy){.btn .btn-outline-primary .btn-sm} |
+| State EM budgets range \$500K–\$530M; **median under \$10M** | Deloitte–NEMA National Risk Study, 2025 [Link](https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/emergency-management-preparedness-response.html){.btn .btn-outline-primary .btn-sm} |
+| Agencies want AI but call commercial offerings "not quite there yet" | Deloitte–NEMA, 2025 [Link](https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/emergency-management-preparedness-response.html){.btn .btn-outline-primary .btn-sm} |
+| Burnout exceeds 50% among emergency-services personnel | Patel et al., 2023 [Link](https://pubmed.ncbi.nlm.nih.gov/37932942/){.btn .btn-outline-primary .btn-sm} |
 
 ::: {.callout-note}
 The takeaway from this table is not "EM is sad." It's that the bar for *useful* is low and the appetite is high — a domain where a "good enough" tool that saves real hours is genuinely valued.
