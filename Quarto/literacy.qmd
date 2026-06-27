@@ -61,4 +61,4 @@ Each tier builds on the last, and most jurisdictions require Technician-level tr
 - **Trench Rescue Awareness** — recognizing collapse and excavation hazards. [Course](https://teex.org/class/res120/){.btn .btn-outline-primary .btn-sm}
 - **Rope Rescue Awareness** — recognizing high-angle and rope-access hazards. [Course](https://teex.org/class/xtn098/){.btn .btn-outline-primary .btn-sm}
 - **Confined Space Awareness** — recognizing atmospheric and entrapment hazards in confined spaces. [Course](https://teex.org/class/www352/){.btn .btn-outline-primary .btn-sm}
-- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
+- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/EMR/Certification){.btn .btn-outline-primary .btn-sm}
