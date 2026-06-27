@@ -1,4 +1,4 @@
-# AI for Emergency Management - Resources for Researchers
+# AI for Emergency Management: Resources for Researchers
 
 A companion site for [*Investigating the Role of AI in Emergency Management: Use cases, challenges, and opportunities*]() (FAccT '26) that provides resources for academic researchers who want to support emergency management problems — guiding CS/AI researchers interested in Emergency Management research projects.
 
