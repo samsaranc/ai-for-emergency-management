@@ -151,7 +151,7 @@
     "href": "instruments.html#whats-here",
     "title": "Reusable Instruments",
     "section": "What’s here",
-    "text": "What’s here\n\nInterview protocol — the full semi-structured script (background → decision scenarios → resource-constrained scenarios → protective-action and evacuation scenarios → improvement opportunities → recovery-center planning).\nPre-interview questionnaire — AI-familiarity items adapted from the Pew Research Center’s survey, plus optional demographics.\nCodebook (v3.0) — five top-level themes: Decision-Making Scenarios, Technology Use Cases, EM Context, Current Tech Usage, and Future Tech Imaginings.\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: drop the protocol and codebook here as downloadable files — e.g. instruments/interview-protocol.pdf and instruments/codebook.pdf — and deposit them on OSF for a citable DOI. The paper’s Appendix E (protocol) and Table 3 (codebook) are the source."
+    "text": "What’s here\n\nInterview protocol — the full semi-structured script (background → decision scenarios → resource-constrained scenarios → protective-action and evacuation scenarios → improvement opportunities → recovery-center planning).\nPre-interview questionnaire — AI-familiarity items adapted from the Pew Research Center’s survey, plus optional demographics.\nCodebook (v3.0) — five top-level themes: Decision-Making Scenarios, Technology Use Cases, EM Context, Current Tech Usage, and Future Tech Imaginings."
   },
   {
     "objectID": "instruments.html#design-choices-worth-reusing",
