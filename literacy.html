@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7ebcd8d6d84910df5062aada6d3c69fc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0be1383d397be760cd2267d93b16d6c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5c39ac0a097467c031e01eb6325faa78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,10 +110,6 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-start-in-em">    
         <li>
-    <a class="dropdown-item" href="./datasets.html">
- <span class="dropdown-text">Datasets and Models</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="./literacy.html">
  <span class="dropdown-text">Domain Literacy</span></a>
   </li>  
@@ -130,8 +126,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Instruments</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link">
- <span class="dropdown-text">Additional Resources</span></a>
+    <a class="dropdown-item" href="./datasets.html">
+ <span class="dropdown-text">Datasets and Models</span></a>
   </li>  
     </ul>
   </li>
@@ -145,20 +141,32 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">AI+HADR</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://www.climatechange.ai/">
- <span class="dropdown-text">AI for Climate Change</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="https://harder-workshop.github.io/robosoft_2025/">
  <span class="dropdown-text">HARDER Workshop @ RoboSoft</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.climatechange.ai/">
+ <span class="dropdown-text">AI for Climate Change</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="https://doi.org/10.1145/3805689.3812279"> <i class="bi bi-file-earmark-text" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-paper" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-file-earmark-text" role="img">
 </i> 
-<span class="menu-text">Paper</span></a>
+ <span class="menu-text">Paper</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-paper">    
+        <li>
+    <a class="dropdown-item" href="https://doi.org/10.1145/3805689.3812279">
+ <span class="dropdown-text">The Paper</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link">
+ <span class="dropdown-text">Additional Resources</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/samsaranc/ai-for-emergency-management"> <i class="bi bi-github" role="img">
 </i> 
@@ -180,10 +188,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#operating-doctrine" id="toc-operating-doctrine" class="nav-link active" data-scroll-target="#operating-doctrine">Operating doctrine</a></li>
-  <li><a href="#why-this-matters-the-evidence-base" id="toc-why-this-matters-the-evidence-base" class="nav-link" data-scroll-target="#why-this-matters-the-evidence-base">Why this matters (the evidence base)</a></li>
+  <li><a href="#for-your-context" id="toc-for-your-context" class="nav-link active" data-scroll-target="#for-your-context">For your context…</a></li>
+  <li><a href="#operating-doctrine" id="toc-operating-doctrine" class="nav-link" data-scroll-target="#operating-doctrine">Operating doctrine</a></li>
   <li><a href="#credentialing-to-understand-the-domain" id="toc-credentialing-to-understand-the-domain" class="nav-link" data-scroll-target="#credentialing-to-understand-the-domain">Credentialing to understand the domain</a></li>
-  <li><a href="#standards-and-forms" id="toc-standards-and-forms" class="nav-link" data-scroll-target="#standards-and-forms">Standards and forms</a></li>
   </ul>
 </nav>
     </div>
@@ -210,16 +217,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>There is an experiential gulf between emergency managers and researchers. Emergency managers are typically non-technical, and researchers are typically non-operational. That gap complicates technology transfer: academics, operating in good faith, end up researching and building solutions to problems that don’t exist in practice.</p>
 <p>You don’t need to become an emergency manager. You do need to recognize the frameworks they live inside, because those frameworks determine what a deployable system even looks like.</p>
-<section id="operating-doctrine" class="level2">
-<h2 class="anchored" data-anchor-id="operating-doctrine">Operating doctrine</h2>
-<ul>
-<li><p><strong>NIMS / ICS</strong> — the National Incident Management System and Incident Command System are the standardized frameworks (mandated by presidential directive after 9/11) that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters. <em>National Incident Management System</em>, 3rd ed.&nbsp;(DHS/FEMA, 2017). <a href="https://training.fema.gov/emiweb/is/is700b/handouts/national_incident_management%20system_third%20edition_october_2017.pdf" class="btn btn-outline-primary btn-sm">Link</a></p></li>
-<li><p><strong>The Whole Community approach</strong> — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it’s foundational. <em>A Whole Community Approach to Emergency Management</em> (FEMA, 2011). <a href="https://www.fema.gov/sites/default/files/2023-04/whole-community-approach-to-emergency-management.pdf" class="btn btn-outline-primary btn-sm">Link</a></p></li>
-</ul>
-</section>
-<section id="why-this-matters-the-evidence-base" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters-the-evidence-base">Why this matters (the evidence base)</h2>
+<section id="for-your-context" class="level2">
+<h2 class="anchored" data-anchor-id="for-your-context">For your context…</h2>
 <p>The field is chronically under-resourced — which is exactly why pragmatic, imperfect tools are welcome here.</p>
 <table class="caption-top table">
 <thead>
@@ -269,46 +270,47 @@ Note
 </div>
 </div>
 </section>
+<section id="operating-doctrine" class="level2">
+<h2 class="anchored" data-anchor-id="operating-doctrine">Operating doctrine</h2>
+<ul>
+<li><p><strong>NIMS / ICS</strong> — the National Incident Management System and Incident Command System are the standardized frameworks that structure how personnel, resources, and information flow during an incident. The same structures scale from local flooding to multi-state disasters. <em>National Incident Management System</em>, 3rd ed.&nbsp;(DHS/FEMA, 2017). <a href="https://training.fema.gov/emiweb/is/is700b/handouts/national_incident_management%20system_third%20edition_october_2017.pdf" class="btn btn-outline-primary btn-sm">Link</a></p></li>
+<li><p><strong>The Whole Community approach</strong> — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it’s foundational. <em>A Whole Community Approach to Emergency Management</em> (FEMA, 2011). <a href="https://www.fema.gov/sites/default/files/2023-04/whole-community-approach-to-emergency-management.pdf" class="btn btn-outline-primary btn-sm">Link</a></p></li>
+</ul>
+</section>
 <section id="credentialing-to-understand-the-domain" class="level2">
 <h2 class="anchored" data-anchor-id="credentialing-to-understand-the-domain">Credentialing to understand the domain</h2>
-<p>You don’t need to get certified to do this research, but the entry-level FEMA courses are short (a few hours each, free, online), and working through them is the fastest way to pick up the vocabulary and structure practitioners take for granted.</p>
+<p>You don’t need to get certified to do this research, but working through the right courses is the fastest way to pick up the vocabulary and structure practitioners take for granted.</p>
+<section id="free-courses" class="level3">
+<h3 class="anchored" data-anchor-id="free-courses">Free courses</h3>
+<p>The entry-level FEMA courses are short (a few hours each), free, and online — a reasonable starting point for any researcher in this space.</p>
 <ul>
 <li><strong>IS-100</strong> — Introduction to the Incident Command System (ICS 100). <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c" class="btn btn-outline-primary btn-sm">Course</a></li>
 <li><strong>IS-200</strong> — ICS for Single Resources and Initial Action Incidents. <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-200.c" class="btn btn-outline-primary btn-sm">Course</a></li>
 <li><strong>IS-700</strong> — An Introduction to the National Incident Management System (NIMS). <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-700.b" class="btn btn-outline-primary btn-sm">Course</a></li>
 <li><strong>IS-800</strong> — National Response Framework, An Introduction. <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-800.d" class="btn btn-outline-primary btn-sm">Course</a></li>
 <li><strong>IS-5.a</strong> — An Introduction to Hazardous Materials. <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-5.a" class="btn btn-outline-primary btn-sm">Course</a></li>
-<li><strong>Emergency Medical Responder (EMR)</strong> — entry-level EMS certification; useful background for response-phase use cases. <a href="https://www.nremt.org/discover/emr" class="btn btn-outline-primary btn-sm">NREMT overview</a></li>
-<li><strong>HAZWOPER / Hazmat Awareness</strong> — OSHA’s hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. <a href="https://www.osha.gov/hazwoper" class="btn btn-outline-primary btn-sm">OSHA overview</a></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>TODO: confirm current version letters for the IS courses above (FEMA periodically revises them) and add any additional credentials worth flagging here.</p>
-</div>
-</div>
 </section>
-<section id="standards-and-forms" class="level2">
-<h2 class="anchored" data-anchor-id="standards-and-forms">Standards and forms</h2>
+<section id="commitment-required" class="level3">
+<h3 class="anchored" data-anchor-id="commitment-required">Commitment required</h3>
+<p>These go well beyond an afternoon — most run multiple days in person and require hands-on skills practice, not just reading. Most hazard-specific disciplines (hazmat, swiftwater, rope, trench, confined space, etc.) are structured around the same three-tier progression:</p>
 <ul>
-<li><p><strong>EMAP</strong> — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against <a href="https://emap.org/wp-content/uploads/2023/04/EMAP-EMS-5-2022-Emergency-Management-Standard.pdf">ANSI/EMAP 5-2022</a>. This matters for AI: it gives you objective ground truth for any plan-analysis tool.</p></li>
-<li><p><strong>ICS forms</strong> — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The <strong>ICS-201</strong> (Incident Briefing) and the <strong>Incident Action Plan (IAP)</strong> are the ones you’ll hear about most.</p>
-<ul>
-<li><a href="https://training.fema.gov/icsresource/icsforms.aspx">ICS forms</a></li>
-<li><a href="https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20201,%20incident%20briefing%20(v3).pdf">Sample ICS-201</a></li>
-<li><a href="https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20215a,%20incident%20action%20plan%20safety%20analysis%20(v3).pdf">Sample IAP template</a></li>
-</ul></li>
+<li><strong>Awareness</strong> — recognize the hazard, understand the risks, and know when to call for trained help. This is the level a researcher would realistically pursue.</li>
+<li><strong>Operations</strong> — take defensive action and support a rescue without entering the hazard zone yourself.</li>
+<li><strong>Technician</strong> — perform the actual rescue or mitigation. This is full operational competency, typically a prerequisite for paid or volunteer response roles.</li>
 </ul>
-<!-- - TODO: link a sample blank ICS-201 and an IAP template. -->
+<p>Each tier builds on the last, and most jurisdictions require Technician-level training before someone can be assigned that role on an incident — these are not credentials to collect casually.</p>
+<ul>
+<li><strong>HAZWOPER / Hazmat Awareness</strong> — OSHA’s hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. <a href="https://www.osha.gov/hazwoper" class="btn btn-outline-primary btn-sm">OSHA overview</a></li>
+<li><strong>Swiftwater Awareness</strong> — recognizing flood and fast-water hazards, relevant to flood-response use cases. <a href="https://teex.org/class/tng80a/" class="btn btn-outline-primary btn-sm">Course</a></li>
+<li><strong>Trench Rescue Awareness</strong> — recognizing collapse and excavation hazards. <a href="https://teex.org/class/res120/" class="btn btn-outline-primary btn-sm">Course</a></li>
+<li><strong>Rope Rescue Awareness</strong> — recognizing high-angle and rope-access hazards. <a href="https://teex.org/class/xtn098/" class="btn btn-outline-primary btn-sm">Course</a></li>
+<li><strong>Confined Space Awareness</strong> — recognizing atmospheric and entrapment hazards in confined spaces. <a href="https://teex.org/class/www352/" class="btn btn-outline-primary btn-sm">Course</a></li>
+<li><strong>Emergency Medical Responder (EMR)</strong> — entry-level EMS certification; useful background for response-phase use cases. <a href="https://www.nremt.org/discover/emr" class="btn btn-outline-primary btn-sm">NREMT overview</a></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
