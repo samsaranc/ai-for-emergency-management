@@ -1,24 +1,94 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Investigating the Role of AI in Emergency Management",
+    "objectID": "datasets.html",
+    "href": "datasets.html",
+    "title": "Datasets Starter Pack",
     "section": "",
-    "text": "COMPANION // FAccT ’26\n\n\nUse cases, challenges, and opportunities — turned into a project picker and onboarding kit for computing researchers.\n\n32 interviewed emergency managers ·  7 use-case categories ·  136 specific use cases\n\n\n~95% of an emergency manager’s time is “blue sky” — non-activated. Yet most tools target the other 5%. Build for the 95%.\n\nOpen the catalog → Read the paper"
+    "text": "Start here instead of from scratch. Each of these is mature enough to build on, and each carries a known limitation that will quietly shape your results if you ignore it. The point of this page is to start with eyes open."
   },
   {
-    "objectID": "index.html#start-here",
-    "href": "index.html#start-here",
-    "title": "Investigating the Role of AI in Emergency Management",
-    "section": "Start here",
-    "text": "Start here\nThe single highest-value artifact is the catalog: it turns the paper into a literal project picker. The rest is an onboarding kit so you start with eyes open instead of rebuilding the field’s known mistakes.\n\n 01 / CATALOG\n\nUse-Case Catalog\n\n\nAll 136 use cases, filterable by category, EM phase, feasibility, and current AI use — each with an “open problems” column.\n\n  02 / DATA\n\nDatasets Starter Pack\n\n\nxBD, HumAID, CrisisBench, CrisisLex, CrisisTransformers — with their known geographic and linguistic biases noted up front.\n\n  03 / DOCTRINE\n\nDomain Literacy\n\n\nNIMS/ICS, the Whole Community doctrine, EMAP standards, a sample ICS-201/IAP, and the staffing + funding evidence base.\n\n  04 / PEOPLE\n\nMeet an EM\n\n\nHow to engage practitioners ethically: where to find them, what a ride-along or tabletop involves, and the norms that matter.\n\n  05 / PITFALLS\n\nAnti-Patterns\n\n\nThe rabbit holes — activation prediction, autonomous life-safety decisions, misinformation-detection overpromises — and why.\n\n  06 / METHOD\n\nReusable Instruments\n\n\nThe interview protocol and codebook, offered for replication — including the international extension the paper invites."
+    "objectID": "datasets.html#damage-assessment-computer-vision",
+    "href": "datasets.html#damage-assessment-computer-vision",
+    "title": "Datasets Starter Pack",
+    "section": "Damage assessment (computer vision)",
+    "text": "Damage assessment (computer vision)\nxBD — the anchor benchmark for building-damage assessment from satellite imagery: over 850,000 building annotations across roughly 45,000 km² spanning six disaster types.\n\n⚠️ Known bias: damage-assessment models show reduced performance on Global South contexts. Evaluate across geographic subgroups before claiming generality.\n\n\nPaper: Gupta et al., Creating xBD (CVPR Workshops, 2019).\nRelated: U-Net (Ronneberger et al., 2015) and transformer-based damage models (Kaur et al., 2023) for architecture baselines."
   },
   {
-    "objectID": "index.html#the-four-phases",
-    "href": "index.html#the-four-phases",
-    "title": "Investigating the Role of AI in Emergency Management",
-    "section": "The four phases",
-    "text": "The four phases\nEmergency management runs on a cyclical four-phase model. Throughout this companion, phase chips mark which part of the cycle a use case touches.\n\nMitigation Preparedness Response Recovery\n\n\n\n\n\n\n\nTipHow to cite\n\n\n\nFoubert, S., Park, M., Pardeshi, K. S., Manzini, T., McDaniel, R., Merrick, D., Murphy, R., Singh, A., & Heidari, H. (2026). Investigating the Role of AI in Emergency Management: Use Cases, Challenges, and Opportunities. FAccT ’26. https://doi.org/10.1145/3805689.3812279"
+    "objectID": "datasets.html#crisis-nlp-text-classification",
+    "href": "datasets.html#crisis-nlp-text-classification",
+    "title": "Datasets Starter Pack",
+    "section": "Crisis NLP (text classification)",
+    "text": "Crisis NLP (text classification)\nHumAID — human-annotated disaster tweets with deep-learning benchmarks (Alam et al., 2021).\nCrisisBench — a consolidated benchmark of crisis-related social-media datasets for humanitarian information processing (Alam et al., 2021).\nCrisisLex — a lexicon for collecting and filtering microblogged communications during crises (Olteanu et al., 2014).\n\n⚠️ Known bias: crisis NLP corpora are predominantly English-centric. Performance for non-English and code-switched messages is largely unmeasured."
+  },
+  {
+    "objectID": "datasets.html#domain-specific-language-models",
+    "href": "datasets.html#domain-specific-language-models",
+    "title": "Datasets Starter Pack",
+    "section": "Domain-specific language models",
+    "text": "Domain-specific language models\nCrisisTransformers — pretrained language models and sentence encoders for crisis-related text; reported to outperform general-purpose models by roughly 10–17% on crisis-classification tasks (Lamsal et al., 2024).\n\nUseful when general LLMs underperform on short, noisy, disaster-specific text."
+  },
+  {
+    "objectID": "datasets.html#search-and-rescue-aerial-imagery",
+    "href": "datasets.html#search-and-rescue-aerial-imagery",
+    "title": "Datasets Starter Pack",
+    "section": "Search and rescue (aerial imagery)",
+    "text": "Search and rescue (aerial imagery)\nDeep-learning approaches to aerial-imagery analysis and reinforcement-learning search-pattern optimization are technically well established (Božić-Štulić et al., 2019; Dong et al., 2021; Ewers et al., 2025).\n\n⚠️ Known bias: publicly available SAR imagery datasets are geographically limited to European terrain. Models may not transfer to other landscapes.\n\n\n\n\n\n\n\nThe cross-cutting lesson\n\n\n\nTraining-data biases — the geographic limits of damage datasets, the English-centricity of crisis NLP — risk creating systems that perform worst for already-marginalized communities. Treat subgroup evaluation as a default step, not an afterthought.\n\n\nFull citations are in the paper’s reference list. TODO: link each dataset to its repository / download page."
+  },
+  {
+    "objectID": "meet-an-em.html",
+    "href": "meet-an-em.html",
+    "title": "Meet an EM",
+    "section": "",
+    "text": "The fastest way to build the wrong tool is to never talk to an emergency manager. The second fastest is to talk to them badly. This page is about doing it well."
+  },
+  {
+    "objectID": "meet-an-em.html#where-to-find-them",
+    "href": "meet-an-em.html#where-to-find-them",
+    "title": "Meet an EM",
+    "section": "Where to find them",
+    "text": "Where to find them\n\nIAEM — the International Association of Emergency Managers hosts an annual conference (with AI workshops) and regional chapters. A good first point of contact. TODO: link.\nState EM associations — most states have one; they often maintain professional distribution lists. These were the backbone of recruitment for this study.\nYour university’s EM connections — campus emergency management, public-health, or robotics groups frequently have practitioner ties.\nLinkedIn + snowball referrals — practical and how much of this study’s sample was reached; ask each contact to refer one more."
+  },
+  {
+    "objectID": "meet-an-em.html#ways-to-observe-lowest-to-highest-commitment",
+    "href": "meet-an-em.html#ways-to-observe-lowest-to-highest-commitment",
+    "title": "Meet an EM",
+    "section": "Ways to observe (lowest to highest commitment)",
+    "text": "Ways to observe (lowest to highest commitment)\n\nA conversation / interview — 60–90 minutes. Use scenario-based prompts: ask them to walk through a specific incident they handled, then ask where technology could have helped. Concrete beats abstract every time.\nAn EOC visit — see the Emergency Operations Center and the tools (WebEOC, GIS) in their actual context.\nA tabletop exercise — observe a simulated scenario. Exercises exist “because that’s the perfect time to make mistakes,” which also makes them a safe place to watch decision-making unfold.\nA ride-along — the deepest immersion; arrange only through an established relationship."
+  },
+  {
+    "objectID": "meet-an-em.html#norms-that-matter",
+    "href": "meet-an-em.html#norms-that-matter",
+    "title": "Meet an EM",
+    "section": "Norms that matter",
+    "text": "Norms that matter\n\n\n\n\n\n\nCome during blue sky, never during an activation\n\n\n\nEMs spend ~95% of their time in non-activated “blue sky” periods. That is when they have time for you. Reaching out during an active disaster is, at best, ignored — and at worst, an interruption to life-safety work. Time it accordingly.\n\n\n\nTheir time is scarce and often unpaid-adjacent. Many are departments of one. Be brief, be prepared, and make the value exchange explicit.\nGround questions in their work, not your tool. Start with their job and a real decision they made before introducing AI. This yields ecologically valid insight instead of speculation.\nThey are accountable for outcomes. “The AI told me to” is not a defense they can use in front of county commissioners. Respect that explainability and human authority are non-negotiable for them.\nGet IRB approval for anything resembling research. This study ran under exempt status (Category 2: interviews and observation of public behavior). TODO: link your IRB resources."
+  },
+  {
+    "objectID": "instruments.html",
+    "href": "instruments.html",
+    "title": "Reusable Instruments",
+    "section": "",
+    "text": "The study deliberately focused on U.S. emergency managers operating under U.S. doctrine (NIMS, ICS, FEMA). International EM runs on different frameworks — for example, the UN cluster approach — and may surface different requirements. These instruments are shared so others can run the extension."
+  },
+  {
+    "objectID": "instruments.html#whats-here",
+    "href": "instruments.html#whats-here",
+    "title": "Reusable Instruments",
+    "section": "What’s here",
+    "text": "What’s here\n\nInterview protocol — the full semi-structured script (background → decision scenarios → resource-constrained scenarios → protective-action and evacuation scenarios → improvement opportunities → recovery-center planning).\nPre-interview questionnaire — AI-familiarity items adapted from the Pew Research Center’s survey, plus optional demographics.\nCodebook (v3.0) — five top-level themes: Decision-Making Scenarios, Technology Use Cases, EM Context, Current Tech Usage, and Future Tech Imaginings.\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: drop the protocol and codebook here as downloadable files — e.g. instruments/interview-protocol.pdf and instruments/codebook.pdf — and deposit them on OSF for a citable DOI. The paper’s Appendix E (protocol) and Table 3 (codebook) are the source."
+  },
+  {
+    "objectID": "instruments.html#design-choices-worth-reusing",
+    "href": "instruments.html#design-choices-worth-reusing",
+    "title": "Reusable Instruments",
+    "section": "Design choices worth reusing",
+    "text": "Design choices worth reusing\n\nFunnel structure — open with their background and a real disaster they handled; introduce technology and AI only later. Grounding participants in concrete experience before speculation yields more valid responses.\nCritical-incident / scenario-based elicitation — ask participants to walk through a specific decision (process, data consulted, stakeholders, outcome) before asking evaluative questions about where AI could help.\nTailoring by AI familiarity — for participants who use AI at work, probe specifics; for those who don’t, focus on general technology experience and hypotheticals.\nReflexive thematic analysis (Braun & Clarke) — open coding generated 847 initial codes; iterative constant-comparison rounds synthesized them into the codebook and seven use-case categories."
+  },
+  {
+    "objectID": "instruments.html#adapting-internationally",
+    "href": "instruments.html#adapting-internationally",
+    "title": "Reusable Instruments",
+    "section": "Adapting internationally",
+    "text": "Adapting internationally\nIf you’re replicating outside the U.S.:\n\nSwap the doctrine-specific references (NIMS/ICS/FEMA, ICS form numbers, EMAP) for your jurisdiction’s equivalents.\nRe-examine the recovery-center section (Disaster Recovery Centers / MARCs are U.S. constructs).\nKeep the funnel and critical-incident techniques — they’re framework-agnostic.\nReport your sample’s AI familiarity with the same validated items to enable cross-study comparison.\n\nIf you run an extension, the authors would value hearing about it — open an issue at https://github.com/samsaranc/ai-for-emergency-management/issues."
   },
   {
     "objectID": "anti-patterns.html",
@@ -67,105 +137,7 @@
     "href": "anti-patterns.html#treating-ems-as-data-sources-not-partners",
     "title": "Anti-Patterns",
     "section": "6. Treating EMs as data sources, not partners",
-    "text": "6. Treating EMs as data sources, not partners\nExtracting labels and requirements, then disappearing.\nWhy it’s a trap: it risks deskilling the very expertise the system depends on, and it produces tools that fail on contact with real workflows. Bring practitioners into design, not just data collection.\n\n\n\n\n\n\nTipThe pattern behind the patterns\n\n\n\nBefore scoping, ask: is the binding constraint here AI capability, or is it interoperability, accountability, infrastructure, or institutions? If it’s the latter, no model fixes it — and that’s worth knowing on day one."
-  },
-  {
-    "objectID": "meet-an-em.html",
-    "href": "meet-an-em.html",
-    "title": "Meet an EM",
-    "section": "",
-    "text": "The fastest way to build the wrong tool is to never talk to an emergency manager. The second fastest is to talk to them badly. This page is about doing it well."
-  },
-  {
-    "objectID": "meet-an-em.html#where-to-find-them",
-    "href": "meet-an-em.html#where-to-find-them",
-    "title": "Meet an EM",
-    "section": "Where to find them",
-    "text": "Where to find them\n\nIAEM — the International Association of Emergency Managers hosts an annual conference (with AI workshops) and regional chapters. A good first point of contact. TODO: link.\nState EM associations — most states have one; they often maintain professional distribution lists. These were the backbone of recruitment for this study.\nYour university’s EM connections — campus emergency management, public-health, or robotics groups frequently have practitioner ties.\nLinkedIn + snowball referrals — practical and how much of this study’s sample was reached; ask each contact to refer one more."
-  },
-  {
-    "objectID": "meet-an-em.html#ways-to-observe-lowest-to-highest-commitment",
-    "href": "meet-an-em.html#ways-to-observe-lowest-to-highest-commitment",
-    "title": "Meet an EM",
-    "section": "Ways to observe (lowest to highest commitment)",
-    "text": "Ways to observe (lowest to highest commitment)\n\nA conversation / interview — 60–90 minutes. Use scenario-based prompts: ask them to walk through a specific incident they handled, then ask where technology could have helped. Concrete beats abstract every time.\nAn EOC visit — see the Emergency Operations Center and the tools (WebEOC, GIS) in their actual context.\nA tabletop exercise — observe a simulated scenario. Exercises exist “because that’s the perfect time to make mistakes,” which also makes them a safe place to watch decision-making unfold.\nA ride-along — the deepest immersion; arrange only through an established relationship."
-  },
-  {
-    "objectID": "meet-an-em.html#norms-that-matter",
-    "href": "meet-an-em.html#norms-that-matter",
-    "title": "Meet an EM",
-    "section": "Norms that matter",
-    "text": "Norms that matter\n\n\n\n\n\n\nWarningCome during blue sky, never during an activation\n\n\n\nEMs spend ~95% of their time in non-activated “blue sky” periods. That is when they have time for you. Reaching out during an active disaster is, at best, ignored — and at worst, an interruption to life-safety work. Time it accordingly.\n\n\n\nTheir time is scarce and often unpaid-adjacent. Many are departments of one. Be brief, be prepared, and make the value exchange explicit.\nGround questions in their work, not your tool. Start with their job and a real decision they made before introducing AI. This yields ecologically valid insight instead of speculation.\nThey are accountable for outcomes. “The AI told me to” is not a defense they can use in front of county commissioners. Respect that explainability and human authority are non-negotiable for them.\nGet IRB approval for anything resembling research. This study ran under exempt status (Category 2: interviews and observation of public behavior). TODO: link your IRB resources."
-  },
-  {
-    "objectID": "catalog.html",
-    "href": "catalog.html",
-    "title": "Use-Case Catalog",
-    "section": "",
-    "text": "NoteHow to read this catalog\n\n\n\n\n\nEach row is a use case emergency managers raised, mapped to one of seven categories and the EM phase it touches. Participants is the number of interviewees who raised that category (out of 32). Feasibility is the authors’ assessment of how well current AI capabilities match the need. Open problems is where you come in — it’s the column that turns this from a table into a research agenda.\nThe starter file ships with 20 grounded example rows spanning all seven categories. Add the remaining rows to data/use_cases.csv; the page updates automatically.\n\n\n\n\ndata = FileAttachment(\"data/use_cases.csv\").csv({typed: true})\n\n\n\n\n\n\n\n\nviewof searched = Inputs.search(data, {\n  placeholder: \"Search use cases, methods, open problems…\",\n  width: 300\n})\n\n\n\n\n\n\n\nviewof category = Inputs.select(\n  [\"All\", ...new Set(data.map(d =&gt; d.category))],\n  {label: \"Category\", value: \"All\"}\n)\n\n\n\n\n\n\n\nviewof phase = Inputs.select(\n  [\"All\", \"Mitigation\", \"Preparedness\", \"Response\", \"Recovery\"],\n  {label: \"EM phase\", value: \"All\"}\n)\n\n\n\n\n\n\n\nviewof feasibility = Inputs.select(\n  [\"All\", \"High\", \"Moderate\", \"Mixed\", \"Low\"],\n  {label: \"Feasibility\", value: \"All\"}\n)\n\n\n\n\n\n\n\nviewof ai = Inputs.select(\n  [\"All\", \"Yes\", \"Limited\", \"None\"],\n  {label: \"Current AI use\", value: \"All\"}\n)\n\n\n\n\n\n\n\n\nfiltered = searched\n  .filter(d =&gt; category === \"All\" || d.category === category)\n  .filter(d =&gt; phase === \"All\" || (d.phase || \"\").includes(phase))\n  .filter(d =&gt; feasibility === \"All\" || (d.feasibility || \"\").startsWith(feasibility))\n  .filter(d =&gt; ai === \"All\" || d.current_ai === ai)\n\n\n\n\n\n\n\nhtml`&lt;div class=\"cat-count\"&gt;&lt;strong&gt;${filtered.length}&lt;/strong&gt; of ${data.length} use cases shown&lt;/div&gt;`\n\n\n\n\n\n\n\n{\n  const phaseClass = {\n    Mitigation: \"chip-mitigate\",\n    Preparedness: \"chip-prepare\",\n    Response: \"chip-respond\",\n    Recovery: \"chip-recover\"\n  };\n  const chips = (p) =&gt;\n    (p || \"\").split(\"/\").map(x =&gt; x.trim()).filter(Boolean).map(x =&gt;\n      html`&lt;span class=\"chip ${phaseClass[x] || \"\"}\"&gt;${x}&lt;/span&gt;`\n    );\n  const feasClass = (f) =&gt; \"feas feas-\" + (f || \"\").toLowerCase().split(\" \")[0];\n\n  return html`&lt;table class=\"cat-table\"&gt;\n    &lt;thead&gt;&lt;tr&gt;\n      &lt;th&gt;Use case&lt;/th&gt;\n      &lt;th&gt;Category&lt;/th&gt;\n      &lt;th&gt;Phase&lt;/th&gt;\n      &lt;th&gt;Part.&lt;/th&gt;\n      &lt;th&gt;Feasibility&lt;/th&gt;\n      &lt;th&gt;AI now&lt;/th&gt;\n      &lt;th&gt;Datasets / methods&lt;/th&gt;\n      &lt;th&gt;Open problems&lt;/th&gt;\n    &lt;/tr&gt;&lt;/thead&gt;\n    &lt;tbody&gt;\n      ${filtered.map(d =&gt; html`&lt;tr&gt;\n        &lt;td class=\"uc-name\"&gt;${d.use_case}&lt;/td&gt;\n        &lt;td&gt;${d.category}&lt;/td&gt;\n        &lt;td&gt;${chips(d.phase)}&lt;/td&gt;\n        &lt;td class=\"num\"&gt;${d.participants}&lt;/td&gt;\n        &lt;td&gt;&lt;span class=\"${feasClass(d.feasibility)}\"&gt;${d.feasibility}&lt;/span&gt;&lt;/td&gt;\n        &lt;td&gt;${d.current_ai}&lt;/td&gt;\n        &lt;td class=\"meth\"&gt;${d.datasets_methods}&lt;/td&gt;\n        &lt;td class=\"prob\"&gt;${d.open_problems}&lt;/td&gt;\n      &lt;/tr&gt;`)}\n    &lt;/tbody&gt;\n  &lt;/table&gt;`;\n}"
-  },
-  {
-    "objectID": "datasets.html",
-    "href": "datasets.html",
-    "title": "Datasets Starter Pack",
-    "section": "",
-    "text": "Start here instead of from scratch. Each of these is mature enough to build on, and each carries a known limitation that will quietly shape your results if you ignore it. The point of this page is to start with eyes open."
-  },
-  {
-    "objectID": "datasets.html#damage-assessment-computer-vision",
-    "href": "datasets.html#damage-assessment-computer-vision",
-    "title": "Datasets Starter Pack",
-    "section": "Damage assessment (computer vision)",
-    "text": "Damage assessment (computer vision)\nxBD — the anchor benchmark for building-damage assessment from satellite imagery: over 850,000 building annotations across roughly 45,000 km² spanning six disaster types.\n\n⚠️ Known bias: damage-assessment models show reduced performance on Global South contexts. Evaluate across geographic subgroups before claiming generality.\n\n\nPaper: Gupta et al., Creating xBD (CVPR Workshops, 2019).\nRelated: U-Net (Ronneberger et al., 2015) and transformer-based damage models (Kaur et al., 2023) for architecture baselines."
-  },
-  {
-    "objectID": "datasets.html#crisis-nlp-text-classification",
-    "href": "datasets.html#crisis-nlp-text-classification",
-    "title": "Datasets Starter Pack",
-    "section": "Crisis NLP (text classification)",
-    "text": "Crisis NLP (text classification)\nHumAID — human-annotated disaster tweets with deep-learning benchmarks (Alam et al., 2021).\nCrisisBench — a consolidated benchmark of crisis-related social-media datasets for humanitarian information processing (Alam et al., 2021).\nCrisisLex — a lexicon for collecting and filtering microblogged communications during crises (Olteanu et al., 2014).\n\n⚠️ Known bias: crisis NLP corpora are predominantly English-centric. Performance for non-English and code-switched messages is largely unmeasured."
-  },
-  {
-    "objectID": "datasets.html#domain-specific-language-models",
-    "href": "datasets.html#domain-specific-language-models",
-    "title": "Datasets Starter Pack",
-    "section": "Domain-specific language models",
-    "text": "Domain-specific language models\nCrisisTransformers — pretrained language models and sentence encoders for crisis-related text; reported to outperform general-purpose models by roughly 10–17% on crisis-classification tasks (Lamsal et al., 2024).\n\nUseful when general LLMs underperform on short, noisy, disaster-specific text."
-  },
-  {
-    "objectID": "datasets.html#search-and-rescue-aerial-imagery",
-    "href": "datasets.html#search-and-rescue-aerial-imagery",
-    "title": "Datasets Starter Pack",
-    "section": "Search and rescue (aerial imagery)",
-    "text": "Search and rescue (aerial imagery)\nDeep-learning approaches to aerial-imagery analysis and reinforcement-learning search-pattern optimization are technically well established (Božić-Štulić et al., 2019; Dong et al., 2021; Ewers et al., 2025).\n\n⚠️ Known bias: publicly available SAR imagery datasets are geographically limited to European terrain. Models may not transfer to other landscapes.\n\n\n\n\n\n\n\nImportantThe cross-cutting lesson\n\n\n\nTraining-data biases — the geographic limits of damage datasets, the English-centricity of crisis NLP — risk creating systems that perform worst for already-marginalized communities. Treat subgroup evaluation as a default step, not an afterthought.\n\n\nFull citations are in the paper’s reference list. TODO: link each dataset to its repository / download page."
-  },
-  {
-    "objectID": "instruments.html",
-    "href": "instruments.html",
-    "title": "Reusable Instruments",
-    "section": "",
-    "text": "The study deliberately focused on U.S. emergency managers operating under U.S. doctrine (NIMS, ICS, FEMA). International EM runs on different frameworks — for example, the UN cluster approach — and may surface different requirements. These instruments are shared so others can run the extension."
-  },
-  {
-    "objectID": "instruments.html#whats-here",
-    "href": "instruments.html#whats-here",
-    "title": "Reusable Instruments",
-    "section": "What’s here",
-    "text": "What’s here\n\nInterview protocol — the full semi-structured script (background → decision scenarios → resource-constrained scenarios → protective-action and evacuation scenarios → improvement opportunities → recovery-center planning).\nPre-interview questionnaire — AI-familiarity items adapted from the Pew Research Center’s survey, plus optional demographics.\nCodebook (v3.0) — five top-level themes: Decision-Making Scenarios, Technology Use Cases, EM Context, Current Tech Usage, and Future Tech Imaginings.\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: drop the protocol and codebook here as downloadable files — e.g. instruments/interview-protocol.pdf and instruments/codebook.pdf — and deposit them on OSF for a citable DOI. The paper’s Appendix E (protocol) and Table 3 (codebook) are the source."
-  },
-  {
-    "objectID": "instruments.html#design-choices-worth-reusing",
-    "href": "instruments.html#design-choices-worth-reusing",
-    "title": "Reusable Instruments",
-    "section": "Design choices worth reusing",
-    "text": "Design choices worth reusing\n\nFunnel structure — open with their background and a real disaster they handled; introduce technology and AI only later. Grounding participants in concrete experience before speculation yields more valid responses.\nCritical-incident / scenario-based elicitation — ask participants to walk through a specific decision (process, data consulted, stakeholders, outcome) before asking evaluative questions about where AI could help.\nTailoring by AI familiarity — for participants who use AI at work, probe specifics; for those who don’t, focus on general technology experience and hypotheticals.\nReflexive thematic analysis (Braun & Clarke) — open coding generated 847 initial codes; iterative constant-comparison rounds synthesized them into the codebook and seven use-case categories."
-  },
-  {
-    "objectID": "instruments.html#adapting-internationally",
-    "href": "instruments.html#adapting-internationally",
-    "title": "Reusable Instruments",
-    "section": "Adapting internationally",
-    "text": "Adapting internationally\nIf you’re replicating outside the U.S.:\n\nSwap the doctrine-specific references (NIMS/ICS/FEMA, ICS form numbers, EMAP) for your jurisdiction’s equivalents.\nRe-examine the recovery-center section (Disaster Recovery Centers / MARCs are U.S. constructs).\nKeep the funnel and critical-incident techniques — they’re framework-agnostic.\nReport your sample’s AI familiarity with the same validated items to enable cross-study comparison.\n\nIf you run an extension, the authors would value hearing about it — open an issue at https://github.com/samsaranc/ai-for-emergency-management/issues."
+    "text": "6. Treating EMs as data sources, not partners\nExtracting labels and requirements, then disappearing.\nWhy it’s a trap: it risks deskilling the very expertise the system depends on, and it produces tools that fail on contact with real workflows. Bring practitioners into design, not just data collection.\n\n\n\n\n\n\nThe pattern behind the patterns\n\n\n\nBefore scoping, ask: is the binding constraint here AI capability, or is it interoperability, accountability, infrastructure, or institutions? If it’s the latter, no model fixes it — and that’s worth knowing on day one."
   },
   {
     "objectID": "literacy.html",
@@ -194,5 +166,33 @@
     "title": "Domain Literacy",
     "section": "Why this matters (the evidence base)",
     "text": "Why this matters (the evidence base)\nThe field is chronically under-resourced — which is exactly why pragmatic, imperfect tools are welcome here.\n\n\n\n\n\n\n\nFinding\nSource\n\n\n\n\n57% of local EM agencies run on one or fewer full-time employees\nArgonne / NPAC staffing study, 2025\n\n\n56% of directors are “dual-hatting” (EM is not their only job)\nArgonne / NPAC, 2025\n\n\n15% of local director positions are unpaid volunteers\nArgonne / NPAC, 2025\n\n\nState EM budgets range $500K–$530M; median under $10M\nDeloitte–NEMA National Risk Study, 2025\n\n\nAgencies want AI but call commercial offerings “not quite there yet”\nDeloitte–NEMA, 2025\n\n\nBurnout exceeds 50% among emergency-services personnel\nPatel et al., 2023\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe takeaway from this table is not “EM is sad.” It’s that the bar for useful is low and the appetite is high — a domain where a “good enough” tool that saves real hours is genuinely valued."
+  },
+  {
+    "objectID": "catalog.html",
+    "href": "catalog.html",
+    "title": "Use-Case Catalog",
+    "section": "",
+    "text": "How to read this catalog\n\n\n\n\n\nEach row is a use case emergency managers raised, mapped to one of seven categories and the EM phase it touches. Participants is the number of interviewees who raised that category (out of 32). Feasibility is the authors’ assessment of how well current AI capabilities match the need. Open problems is where you come in — it’s the column that turns this from a table into a research agenda.\nThe starter file ships with 20 grounded example rows spanning all seven categories. Add the remaining rows to data/use_cases.csv; the page updates automatically.\n\n\n\n\ndata = FileAttachment(\"data/use_cases.csv\").csv({typed: true})\n\n\n\n\n\n\n\n\nviewof searched = Inputs.search(data, {\n  placeholder: \"Search use cases, methods, open problems…\",\n  width: 300\n})\n\n\n\n\n\n\n\nviewof category = Inputs.select(\n  [\"All\", ...new Set(data.map(d =&gt; d.category))],\n  {label: \"Category\", value: \"All\"}\n)\n\n\n\n\n\n\n\nviewof phase = Inputs.select(\n  [\"All\", \"Mitigation\", \"Preparedness\", \"Response\", \"Recovery\"],\n  {label: \"EM phase\", value: \"All\"}\n)\n\n\n\n\n\n\n\nviewof feasibility = Inputs.select(\n  [\"All\", \"High\", \"Moderate\", \"Mixed\", \"Low\"],\n  {label: \"Feasibility\", value: \"All\"}\n)\n\n\n\n\n\n\n\nviewof ai = Inputs.select(\n  [\"All\", \"Yes\", \"Limited\", \"None\"],\n  {label: \"Current AI use\", value: \"All\"}\n)\n\n\n\n\n\n\n\n\nfiltered = searched\n  .filter(d =&gt; category === \"All\" || d.category === category)\n  .filter(d =&gt; phase === \"All\" || (d.phase || \"\").includes(phase))\n  .filter(d =&gt; feasibility === \"All\" || (d.feasibility || \"\").startsWith(feasibility))\n  .filter(d =&gt; ai === \"All\" || d.current_ai === ai)\n\n\n\n\n\n\n\nhtml`&lt;div class=\"cat-count\"&gt;&lt;strong&gt;${filtered.length}&lt;/strong&gt; of ${data.length} use cases shown&lt;/div&gt;`\n\n\n\n\n\n\n\n{\n  const phaseClass = {\n    Mitigation: \"chip-mitigate\",\n    Preparedness: \"chip-prepare\",\n    Response: \"chip-respond\",\n    Recovery: \"chip-recover\"\n  };\n  const chips = (p) =&gt;\n    (p || \"\").split(\"/\").map(x =&gt; x.trim()).filter(Boolean).map(x =&gt;\n      html`&lt;span class=\"chip ${phaseClass[x] || \"\"}\"&gt;${x}&lt;/span&gt;`\n    );\n  const feasClass = (f) =&gt; \"feas feas-\" + (f || \"\").toLowerCase().split(\" \")[0];\n\n  return html`&lt;table class=\"cat-table\"&gt;\n    &lt;thead&gt;&lt;tr&gt;\n      &lt;th&gt;Use case&lt;/th&gt;\n      &lt;th&gt;Category&lt;/th&gt;\n      &lt;th&gt;Phase&lt;/th&gt;\n      &lt;th&gt;Part.&lt;/th&gt;\n      &lt;th&gt;Feasibility&lt;/th&gt;\n      &lt;th&gt;AI now&lt;/th&gt;\n      &lt;th&gt;Datasets / methods&lt;/th&gt;\n      &lt;th&gt;Open problems&lt;/th&gt;\n    &lt;/tr&gt;&lt;/thead&gt;\n    &lt;tbody&gt;\n      ${filtered.map(d =&gt; html`&lt;tr&gt;\n        &lt;td class=\"uc-name\"&gt;${d.use_case}&lt;/td&gt;\n        &lt;td&gt;${d.category}&lt;/td&gt;\n        &lt;td&gt;${chips(d.phase)}&lt;/td&gt;\n        &lt;td class=\"num\"&gt;${d.participants}&lt;/td&gt;\n        &lt;td&gt;&lt;span class=\"${feasClass(d.feasibility)}\"&gt;${d.feasibility}&lt;/span&gt;&lt;/td&gt;\n        &lt;td&gt;${d.current_ai}&lt;/td&gt;\n        &lt;td class=\"meth\"&gt;${d.datasets_methods}&lt;/td&gt;\n        &lt;td class=\"prob\"&gt;${d.open_problems}&lt;/td&gt;\n      &lt;/tr&gt;`)}\n    &lt;/tbody&gt;\n  &lt;/table&gt;`;\n}"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Investigating the Role of AI in Emergency Management",
+    "section": "",
+    "text": "COMPANION // FAccT ’26\n\n\nUse cases, challenges, and opportunities — turned into a project picker and onboarding kit for computing researchers.\n\n32 interviewed emergency managers ·  7 use-case categories ·  136 specific use cases\n\n\n~95% of an emergency manager’s time is “blue sky” — non-activated. Yet most tools target the other 5%. Build for the 95%.\n\nOpen the catalog → Read the paper"
+  },
+  {
+    "objectID": "index.html#start-here",
+    "href": "index.html#start-here",
+    "title": "Investigating the Role of AI in Emergency Management",
+    "section": "Start here",
+    "text": "Start here\nThe single highest-value artifact is the catalog: it turns the paper into a literal project picker. The rest is an onboarding kit so you start with eyes open instead of rebuilding the field’s known mistakes.\n\n 01 / CATALOG\n\nUse-Case Catalog\n\n\nAll 136 use cases, filterable by category, EM phase, feasibility, and current AI use — each with an “open problems” column.\n\n  02 / DATA\n\nDatasets Starter Pack\n\n\nxBD, HumAID, CrisisBench, CrisisLex, CrisisTransformers — with their known geographic and linguistic biases noted up front.\n\n  03 / DOCTRINE\n\nDomain Literacy\n\n\nNIMS/ICS, the Whole Community doctrine, EMAP standards, a sample ICS-201/IAP, and the staffing + funding evidence base.\n\n  04 / PEOPLE\n\nMeet an EM\n\n\nHow to engage practitioners ethically: where to find them, what a ride-along or tabletop involves, and the norms that matter.\n\n  05 / PITFALLS\n\nAnti-Patterns\n\n\nThe rabbit holes — activation prediction, autonomous life-safety decisions, misinformation-detection overpromises — and why.\n\n  06 / METHOD\n\nReusable Instruments\n\n\nThe interview protocol and codebook, offered for replication — including the international extension the paper invites."
+  },
+  {
+    "objectID": "index.html#the-four-phases",
+    "href": "index.html#the-four-phases",
+    "title": "Investigating the Role of AI in Emergency Management",
+    "section": "The four phases",
+    "text": "The four phases\nEmergency management runs on a cyclical four-phase model. Throughout this companion, phase chips mark which part of the cycle a use case touches.\n\nMitigation Preparedness Response Recovery\n\n\n\n\n\n\n\nHow to cite\n\n\n\nFoubert, S., Park, M., Pardeshi, K. S., Manzini, T., McDaniel, R., Merrick, D., Murphy, R., Singh, A., & Heidari, H. (2026). Investigating the Role of AI in Emergency Management: Use Cases, Challenges, and Opportunities. FAccT ’26. https://doi.org/10.1145/3805689.3812279"
   }
 ]
