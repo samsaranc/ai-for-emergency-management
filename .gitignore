@@ -1,1 +1,6 @@
-Quarto/.quarto/
+# Quarto build artifacts
+/.quarto/
+/_site/
+
+# OS files
+.DS_Store
