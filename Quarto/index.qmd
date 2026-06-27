@@ -20,8 +20,6 @@ page-layout: full
 
 ## Start here
 
-The single highest-value artifact is the catalog: it turns the paper into a literal project picker. The rest is an onboarding kit so you start with eyes open instead of rebuilding the field's known mistakes.
-
 ::: {.cards}
 <a class="card-link" href="catalog.qmd">
   <span class="cn">01 / CATALOG</span>
