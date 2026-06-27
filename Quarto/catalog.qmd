@@ -1,6 +1,6 @@
 ---
 title: "Use-Case Catalog"
-subtitle: "Filter by category, EM phase, feasibility, and current AI use — then read the open problems. This is the project picker."
+subtitle: "Filter by `category`, `EM phase`, `feasibility`, and `current reported AI use`"
 page-layout: full
 toc: false
 resources:
@@ -17,7 +17,7 @@ The starter file ships with 20 grounded example rows spanning all seven categori
 
 ```{ojs}
 //| echo: false
-data = FileAttachment("../data/use_cases.csv").csv({typed: true})
+data = FileAttachment("data/use_cases.csv").csv({typed: true})
 ```
 
 ::: {.cat-controls}
