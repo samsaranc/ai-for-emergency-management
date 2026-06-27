@@ -13,17 +13,6 @@ You don't need to become an emergency manager. You do need to recognize the fram
 - **The Whole Community approach** — the doctrine of genuinely engaging community members, especially those most vulnerable to disaster impacts, across all four phases. It emerged from documented disparities in disaster outcomes (e.g., Hurricane Katrina). This is why equity is not an add-on in EM — it's foundational.
     *A Whole Community Approach to Emergency Management* (FEMA, 2011). [Link](https://www.fema.gov/sites/default/files/2023-04/whole-community-approach-to-emergency-management.pdf){.btn .btn-outline-primary .btn-sm}
 
-## Standards and forms
-
-- **EMAP** — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against [ANSI/EMAP 5-2022](https://emap.org/wp-content/uploads/2023/04/EMAP-EMS-5-2022-Emergency-Management-Standard.pdf). This matters for AI: it gives you objective ground truth for any plan-analysis tool.
-
-- **ICS forms** — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The **ICS-201** (Incident Briefing) and the **Incident Action Plan (IAP)** are the ones you'll hear about most.
-    - [ICS forms](https://training.fema.gov/icsresource/icsforms.aspx)
-    - [Sample ICS-201](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20201,%20incident%20briefing%20(v3).pdf)
-    - [Sample IAP template](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20215a,%20incident%20action%20plan%20safety%20analysis%20(v3).pdf)
-
-<!-- - TODO: link a sample blank ICS-201 and an IAP template. -->
-
 ## Why this matters (the evidence base)
 
 The field is chronically under-resourced — which is exactly why pragmatic, imperfect tools are welcome here.
@@ -40,3 +29,30 @@ The field is chronically under-resourced — which is exactly why pragmatic, imp
 ::: {.callout-note}
 The takeaway from this table is not "EM is sad." It's that the bar for *useful* is low and the appetite is high — a domain where a "good enough" tool that saves real hours is genuinely valued.
 :::
+
+## Credentialing to understand the domain
+
+You don't need to get certified to do this research, but the entry-level FEMA courses are short (a few hours each, free, online), and working through them is the fastest way to pick up the vocabulary and structure practitioners take for granted.
+
+- **IS-100** — Introduction to the Incident Command System (ICS 100). [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c){.btn .btn-outline-primary .btn-sm}
+- **IS-200** — ICS for Single Resources and Initial Action Incidents. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-200.c){.btn .btn-outline-primary .btn-sm}
+- **IS-700** — An Introduction to the National Incident Management System (NIMS). [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-700.b){.btn .btn-outline-primary .btn-sm}
+- **IS-800** — National Response Framework, An Introduction. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-800.d){.btn .btn-outline-primary .btn-sm}
+- **IS-5.a** — An Introduction to Hazardous Materials. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-5.a){.btn .btn-outline-primary .btn-sm}
+- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
+- **HAZWOPER / Hazmat Awareness** — OSHA's hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. [OSHA overview](https://www.osha.gov/hazwoper){.btn .btn-outline-primary .btn-sm}
+
+::: {.callout-note}
+TODO: confirm current version letters for the IS courses above (FEMA periodically revises them) and add any additional credentials worth flagging here.
+:::
+
+## Standards and forms
+
+- **EMAP** — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against [ANSI/EMAP 5-2022](https://emap.org/wp-content/uploads/2023/04/EMAP-EMS-5-2022-Emergency-Management-Standard.pdf). This matters for AI: it gives you objective ground truth for any plan-analysis tool.
+
+- **ICS forms** — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The **ICS-201** (Incident Briefing) and the **Incident Action Plan (IAP)** are the ones you'll hear about most.
+    - [ICS forms](https://training.fema.gov/icsresource/icsforms.aspx)
+    - [Sample ICS-201](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20201,%20incident%20briefing%20(v3).pdf)
+    - [Sample IAP template](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20215a,%20incident%20action%20plan%20safety%20analysis%20(v3).pdf)
+
+<!-- - TODO: link a sample blank ICS-201 and an IAP template. -->
