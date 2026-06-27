@@ -34,27 +34,39 @@ The takeaway from this table is not "EM is sad." It's that the bar for *useful* 
 
 ## Credentialing to understand the domain
 
-You don't need to get certified to do this research, but the entry-level FEMA courses are short (a few hours each, free, online), and working through them is the fastest way to pick up the vocabulary and structure practitioners take for granted.
+You don't need to get certified to do this research, but working through the right courses is the fastest way to pick up the vocabulary and structure practitioners take for granted.
+
+### Free courses
+
+The entry-level FEMA courses are short (a few hours each), free, and online — a reasonable starting point for any researcher in this space.
 
 - **IS-100** — Introduction to the Incident Command System (ICS 100). [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c){.btn .btn-outline-primary .btn-sm}
 - **IS-200** — ICS for Single Resources and Initial Action Incidents. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-200.c){.btn .btn-outline-primary .btn-sm}
 - **IS-700** — An Introduction to the National Incident Management System (NIMS). [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-700.b){.btn .btn-outline-primary .btn-sm}
 - **IS-800** — National Response Framework, An Introduction. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-800.d){.btn .btn-outline-primary .btn-sm}
 - **IS-5.a** — An Introduction to Hazardous Materials. [Course](https://training.fema.gov/is/courseoverview.aspx?code=IS-5.a){.btn .btn-outline-primary .btn-sm}
-- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
-- **HAZWOPER / Hazmat Awareness** — OSHA's hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. [OSHA overview](https://www.osha.gov/hazwoper){.btn .btn-outline-primary .btn-sm}
 
 ::: {.callout-note}
 TODO: confirm current version letters for the IS courses above (FEMA periodically revises them) and add any additional credentials worth flagging here.
 :::
 
-## Standards and forms
+### Commitment required
 
-- **EMAP** — the Emergency Management Accreditation Program provides the standardized criteria plans are evaluated against [ANSI/EMAP 5-2022](https://emap.org/wp-content/uploads/2023/04/EMAP-EMS-5-2022-Emergency-Management-Standard.pdf). This matters for AI: it gives you objective ground truth for any plan-analysis tool.
+These go well beyond an afternoon — most run multiple days in person and require hands-on skills practice, not just reading. Most hazard-specific disciplines (hazmat, swiftwater, rope, trench, confined space, etc.) are structured around the same three-tier progression:
 
-- **ICS forms** — EM is heavily text-driven, with standardized forms (ICS-201 through ICS-215) governing information flow. The **ICS-201** (Incident Briefing) and the **Incident Action Plan (IAP)** are the ones you'll hear about most.
-    - [ICS forms](https://training.fema.gov/icsresource/icsforms.aspx)
-    - [Sample ICS-201](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20201,%20incident%20briefing%20(v3).pdf)
-    - [Sample IAP template](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20215a,%20incident%20action%20plan%20safety%20analysis%20(v3).pdf)
+- **Awareness** — recognize the hazard, understand the risks, and know when to call for trained help. This is the level a researcher would realistically pursue.
+- **Operations** — take defensive action and support a rescue without entering the hazard zone yourself.
+- **Technician** — perform the actual rescue or mitigation. This is full operational competency, typically a prerequisite for paid or volunteer response roles.
 
-<!-- - TODO: link a sample blank ICS-201 and an IAP template. -->
+Each tier builds on the last, and most jurisdictions require Technician-level training before someone can be assigned that role on an incident — these are not credentials to collect casually.
+
+- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
+- **HAZWOPER / Hazmat Awareness** — OSHA's hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. [OSHA overview](https://www.osha.gov/hazwoper){.btn .btn-outline-primary .btn-sm}
+- **Swiftwater Awareness** — recognizing flood and fast-water hazards, relevant to flood-response use cases.
+- **Trench Rescue Awareness** — recognizing collapse and excavation hazards.
+- **Rope Rescue Awareness** — recognizing high-angle and rope-access hazards.
+- **Confined Space Awareness** — recognizing atmospheric and entrapment hazards in confined spaces.
+
+::: {.callout-note}
+TODO: source authoritative course links for Swiftwater, Trench Rescue, Rope Rescue, and Confined Space Awareness (these are typically offered through state fire academies or NFPA-aligned training providers rather than a single national source).
+:::
