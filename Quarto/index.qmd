@@ -7,9 +7,9 @@ page-layout: full
 ::: {.hero}
 [COMPANION // FAccT '26]{.eyebrow}
 
-# Investigating the Role of AI in Emergency Management {.hero-title}
+# AI for Emergency Management — Resources for Researchers {.hero-title}
 
-[Use cases, challenges, and opportunities — turned into a project picker and onboarding kit for computing researchers.]{.lede}
+[Use cases, challenges, and opportunities from *Investigating the Role of AI in Emergency Management* — turned into a project picker and onboarding kit for academic researchers who want to support emergency management problems.]{.lede}
 
 ::: {.readout}
 [32]{.rnum} interviewed emergency managers&nbsp;·&nbsp; [7]{.rnum} use-case categories&nbsp;·&nbsp; [136]{.rnum} specific use cases
