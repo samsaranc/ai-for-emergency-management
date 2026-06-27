@@ -41,6 +41,7 @@ website:
           - text: "AI for Climate Change"
             href: "https://www.climatechange.ai/"
       - icon: file-earmark-text
+        text: "Paper"
         menu:
           - text: "The Paper"
             href: "https://doi.org/10.1145/3805689.3812279"
