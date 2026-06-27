@@ -50,25 +50,26 @@ h2 { margin-top: 2.4rem; border-bottom: 1px solid $line; padding-bottom: .35rem;
   background: linear-gradient(160deg, $ink 0%, $ink-2 100%);
   color: #eef2f1;
   border-radius: 12px;
-  padding: 2.6rem 2.4rem 2.2rem;
+  padding: 2.2rem 2.4rem 1.9rem;
   margin: .5rem 0 2.4rem;
   border: 1px solid #0c1620;
+  max-width: none;
 }
 .hero .eyebrow { color: #67c2c9; }
 .hero-title {
   color: #fff;
   font-size: 2.6rem;
-  line-height: 1.08;
-  margin: .5rem 0 .6rem;
-  max-width: 22ch;
+  line-height: 1.05;
+  margin: .4rem 0 .5rem;
+  max-width: 32ch;
 }
-.hero .lede { font-size: 1.15rem; color: #c7d2d1; max-width: 80ch; }
+.hero .lede { font-size: 1.1rem; line-height: 1.4; color: #c7d2d1; max-width: none; }
 
 .readout {
   font-family: "IBM Plex Mono", monospace;
   font-size: .95rem;
   color: #9fb0b0;
-  margin: 1.3rem 0 1.1rem;
+  margin: 1rem 0 .9rem;
   letter-spacing: .01em;
 }
 .readout .rnum { color: #fff; font-weight: 600; }
@@ -102,11 +103,12 @@ h2 { margin-top: 2.4rem; border-bottom: 1px solid $line; padding-bottom: .35rem;
 /* ---------- "Start here" cards ---------- */
 .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; }
 .card-link {
-  display: block; padding: 1.1rem 1.2rem; border: 1px solid $line;
+  position: relative; display: block; padding: 1.1rem 1.2rem; border: 1px solid $line;
   border-radius: 8px; background: #fff; text-decoration: none; color: $ink;
   transition: border-color .15s, transform .15s;
 }
 .card-link:hover { border-color: $signal; transform: translateY(-2px); }
+.card-link-overlay { position: absolute; inset: 0; z-index: 1; }
 .card-link .ct { font-family: "Libre Franklin", sans-serif; font-weight: 700; color: $ink; }
 .card-link .cd { color: $muted; font-size: .92rem; margin-top: .25rem; }
 .card-link .cn { font-family: "IBM Plex Mono", monospace; font-size: .72rem; color: $signal; letter-spacing: .12em; }
@@ -134,6 +136,9 @@ h2 { margin-top: 2.4rem; border-bottom: 1px solid $line; padding-bottom: .35rem;
   border-radius: 8px; margin-bottom: 1rem;
 }
 .cat-controls .cell { margin: 0 !important; }
+.cat-controls input, .cat-controls select, .cat-controls textarea {
+  font-family: "Libre Franklin", -apple-system, system-ui, sans-serif;
+}
 .cat-count {
   font-family: "IBM Plex Mono", monospace; font-size: .85rem; color: $muted;
   margin: .4rem 0 .8rem;
@@ -166,3 +171,15 @@ table.cat-table .prob { font-family: "Source Serif 4", serif; font-size: .88rem;
 
 /* Quieten Quarto's default callout a touch */
 .callout { border-radius: 8px; }
+
+/* ---------- Inline "Link" / "Course" / "Paper" buttons ---------- */
+/* Bootstrap's default .btn-sm padding is tall enough to overlap adjacent
+   wrapped text lines when these sit inline inside list items/paragraphs. */
+a.btn-sm {
+  display: inline-block;
+  padding: .04rem .45rem;
+  font-size: .76rem;
+  line-height: 1.5;
+  vertical-align: baseline;
+  margin: .15rem .1rem;
+}

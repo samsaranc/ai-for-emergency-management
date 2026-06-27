@@ -22,8 +22,6 @@ website:
         href: catalog.qmd
       - text: "Getting Start in EM"
         menu:
-          - text: "Datasets and Models"
-            href: datasets.qmd
           - text: "Domain Literacy"
             href: literacy.qmd
           - text: "Meet an EM"
@@ -32,20 +30,23 @@ website:
             href: anti-patterns.qmd
           - text: "Instruments"
             href: instruments.qmd
-          - text: "Additional Resources"
-            href: "https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link"
+          - text: "Datasets and Models"
+            href: datasets.qmd
       - text: "Other Resources"
         menu:
           - text: "AI+HADR"
             href: "https://hadr.ai"
-          - text: "AI for Climate Change"
-            href: "https://www.climatechange.ai/"
           - text: "HARDER Workshop @ RoboSoft"
             href: "https://harder-workshop.github.io/robosoft_2025/"
-    # right:
+          - text: "AI for Climate Change"
+            href: "https://www.climatechange.ai/"
       - icon: file-earmark-text
         text: "Paper"
-        href: "https://doi.org/10.1145/3805689.3812279"
+        menu:
+          - text: "The Paper"
+            href: "https://doi.org/10.1145/3805689.3812279"
+          - text: "Additional Resources"
+            href: "https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link"
       - icon: github
         href: "https://github.com/samsaranc/ai-for-emergency-management"
   page-footer:
@@ -66,4 +67,4 @@ format:
     code-copy: true
     link-external-newwindow: true
     grid:
-      body-width: 880px
+      body-width: 1040px
