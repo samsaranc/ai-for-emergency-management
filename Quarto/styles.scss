@@ -103,11 +103,12 @@ h2 { margin-top: 2.4rem; border-bottom: 1px solid $line; padding-bottom: .35rem;
 /* ---------- "Start here" cards ---------- */
 .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; }
 .card-link {
-  display: block; padding: 1.1rem 1.2rem; border: 1px solid $line;
+  position: relative; display: block; padding: 1.1rem 1.2rem; border: 1px solid $line;
   border-radius: 8px; background: #fff; text-decoration: none; color: $ink;
   transition: border-color .15s, transform .15s;
 }
 .card-link:hover { border-color: $signal; transform: translateY(-2px); }
+.card-link-overlay { position: absolute; inset: 0; z-index: 1; }
 .card-link .ct { font-family: "Libre Franklin", sans-serif; font-weight: 700; color: $ink; }
 .card-link .cd { color: $muted; font-size: .92rem; margin-top: .25rem; }
 .card-link .cn { font-family: "IBM Plex Mono", monospace; font-size: .72rem; color: $signal; letter-spacing: .12em; }

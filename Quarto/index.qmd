@@ -21,36 +21,48 @@ page-layout: full
 ## Start here
 
 ::: {.cards}
-<a class="card-link" href="catalog.qmd">
-  <span class="cn">01 / CATALOG</span>
-  <div class="ct">Use-Case Catalog</div>
-  <div class="cd">All 136 use cases, filterable by category, EM phase, feasibility, and current AI use — each with an "open problems" column.</div>
-</a>
-<a class="card-link" href="datasets.qmd">
-  <span class="cn">02 / DATA</span>
-  <div class="ct">Datasets Starter Pack</div>
-  <div class="cd">xBD, HumAID, CrisisBench, CrisisLex, CrisisTransformers — with their known geographic and linguistic biases noted up front.</div>
-</a>
-<a class="card-link" href="literacy.qmd">
-  <span class="cn">03 / DOCTRINE</span>
-  <div class="ct">Domain Literacy</div>
-  <div class="cd">NIMS/ICS, the Whole Community doctrine, EMAP standards, a sample ICS-201/IAP, and the staffing + funding evidence base.</div>
-</a>
-<a class="card-link" href="meet-an-em.qmd">
-  <span class="cn">04 / PEOPLE</span>
-  <div class="ct">Meet an EM</div>
-  <div class="cd">How to engage practitioners ethically: where to find them, what a ride-along or tabletop involves, and the norms that matter.</div>
-</a>
-<a class="card-link" href="anti-patterns.qmd">
-  <span class="cn">05 / PITFALLS</span>
-  <div class="ct">Anti-Patterns</div>
-  <div class="cd">The rabbit holes — activation prediction, autonomous life-safety decisions, misinformation-detection overpromises — and why.</div>
-</a>
-<a class="card-link" href="instruments.qmd">
-  <span class="cn">06 / METHOD</span>
-  <div class="ct">Reusable Instruments</div>
-  <div class="cd">The interview protocol and codebook, offered for replication — including the international extension the paper invites.</div>
-</a>
+
+<div class="card-link">
+<a class="card-link-overlay" href="catalog.qmd" aria-label="Use-Case Catalog"></a>
+<span class="cn">01 / CATALOG</span>
+<div class="ct">Use-Case Catalog</div>
+<div class="cd">All 136 use cases, filterable by category, EM phase, feasibility, and current AI use — each with an "open problems" column.</div>
+</div>
+
+<div class="card-link">
+<a class="card-link-overlay" href="datasets.qmd" aria-label="Datasets Starter Pack"></a>
+<span class="cn">02 / DATA</span>
+<div class="ct">Datasets Starter Pack</div>
+<div class="cd">xBD, HumAID, CrisisBench, CrisisLex, CrisisTransformers — with their known geographic and linguistic biases noted up front.</div>
+</div>
+
+<div class="card-link">
+<a class="card-link-overlay" href="literacy.qmd" aria-label="Domain Literacy"></a>
+<span class="cn">03 / DOCTRINE</span>
+<div class="ct">Domain Literacy</div>
+<div class="cd">NIMS/ICS, the Whole Community doctrine, EMAP standards, a sample ICS-201/IAP, and the staffing + funding evidence base.</div>
+</div>
+
+<div class="card-link">
+<a class="card-link-overlay" href="meet-an-em.qmd" aria-label="Meet an EM"></a>
+<span class="cn">04 / PEOPLE</span>
+<div class="ct">Meet an EM</div>
+<div class="cd">How to engage practitioners ethically: where to find them, what a ride-along or tabletop involves, and the norms that matter.</div>
+</div>
+
+<div class="card-link">
+<a class="card-link-overlay" href="anti-patterns.qmd" aria-label="Anti-Patterns"></a>
+<span class="cn">05 / PITFALLS</span>
+<div class="ct">Anti-Patterns</div>
+<div class="cd">The rabbit holes — activation prediction, autonomous life-safety decisions, misinformation-detection overpromises — and why.</div>
+</div>
+
+<div class="card-link">
+<a class="card-link-overlay" href="instruments.qmd" aria-label="Reusable Instruments"></a>
+<span class="cn">06 / METHOD</span>
+<div class="ct">Reusable Instruments</div>
+<div class="cd">The interview protocol and codebook, offered for replication — including the international extension the paper invites.</div>
+</div>
 
 :::
 

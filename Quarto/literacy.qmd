@@ -3,6 +3,8 @@ title: "Domain Literacy"
 subtitle: "The doctrine, standards, and evidence base you need to talk to emergency managers without wasting their time."
 ---
 
+There is an experiential gulf between emergency managers and researchers. Emergency managers are typically non-technical, and researchers are typically non-operational. That gap complicates technology transfer: academics, operating in good faith, end up researching and building solutions to problems that don't exist in practice.
+
 You don't need to become an emergency manager. You do need to recognize the frameworks they live inside, because those frameworks determine what a deployable system even looks like.
 
 ## Why this matters (the evidence base)
