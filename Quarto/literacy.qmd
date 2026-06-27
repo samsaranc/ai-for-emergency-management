@@ -7,7 +7,7 @@ There is an experiential gulf between emergency managers and researchers. Emerge
 
 You don't need to become an emergency manager. You do need to recognize the frameworks they live inside, because those frameworks determine what a deployable system even looks like.
 
-## Why this matters (the evidence base)
+## For your context...
 
 The field is chronically under-resourced — which is exactly why pragmatic, imperfect tools are welcome here.
 
@@ -56,9 +56,9 @@ These go well beyond an afternoon — most run multiple days in person and requi
 
 Each tier builds on the last, and most jurisdictions require Technician-level training before someone can be assigned that role on an incident — these are not credentials to collect casually.
 
-- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
 - **HAZWOPER / Hazmat Awareness** — OSHA's hazardous-materials awareness-level training, relevant to any tool touching chemical or industrial incidents. [OSHA overview](https://www.osha.gov/hazwoper){.btn .btn-outline-primary .btn-sm}
 - **Swiftwater Awareness** — recognizing flood and fast-water hazards, relevant to flood-response use cases. [Course](https://teex.org/class/tng80a/){.btn .btn-outline-primary .btn-sm}
 - **Trench Rescue Awareness** — recognizing collapse and excavation hazards. [Course](https://teex.org/class/res120/){.btn .btn-outline-primary .btn-sm}
 - **Rope Rescue Awareness** — recognizing high-angle and rope-access hazards. [Course](https://teex.org/class/xtn098/){.btn .btn-outline-primary .btn-sm}
 - **Confined Space Awareness** — recognizing atmospheric and entrapment hazards in confined spaces. [Course](https://teex.org/class/www352/){.btn .btn-outline-primary .btn-sm}
+- **Emergency Medical Responder (EMR)** — entry-level EMS certification; useful background for response-phase use cases. [NREMT overview](https://www.nremt.org/discover/emr){.btn .btn-outline-primary .btn-sm}
