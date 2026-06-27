@@ -38,10 +38,10 @@ website:
         menu:
           - text: "AI+HADR"
             href: "https://hadr.ai"
-          - text: "AI for Climate Change"
-            href: "https://www.climatechange.ai/"
           - text: "HARDER Workshop @ RoboSoft"
             href: "https://harder-workshop.github.io/robosoft_2025/"
+          - text: "AI for Climate Change"
+            href: "https://www.climatechange.ai/"
     # right:
       - icon: file-earmark-text
         text: "Paper"
