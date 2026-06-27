@@ -24,14 +24,14 @@ website:
         menu:
           - text: "Domain Literacy"
             href: literacy.qmd
-          - text: "Datasets and Models"
-            href: datasets.qmd
           - text: "Meet an EM"
             href: meet-an-em.qmd
           - text: "Anti-Patterns"
             href: anti-patterns.qmd
           - text: "Instruments"
             href: instruments.qmd
+          - text: "Datasets and Models"
+            href: datasets.qmd
       - text: "Other Resources"
         menu:
           - text: "AI+HADR"
