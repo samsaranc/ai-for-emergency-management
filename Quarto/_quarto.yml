@@ -24,7 +24,7 @@ website:
         menu:
           - text: "Domain Literacy"
             href: literacy.qmd
-          - text: "Meet an EM"
+          - text: "Engage with EMs"
             href: meet-an-em.qmd
           - text: "Anti-Patterns"
             href: anti-patterns.qmd
@@ -32,6 +32,8 @@ website:
             href: instruments.qmd
           - text: "Datasets and Models"
             href: datasets.qmd
+          - text: "More Intro Resources"
+            href: "https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link"
       - text: "Other Resources"
         menu:
           - text: "AI+HADR"
@@ -43,10 +45,8 @@ website:
       - icon: file-earmark-text
         text: "Paper"
         menu:
-          - text: "The Paper"
+          - text: "FAccT '26 Paper"
             href: "https://doi.org/10.1145/3805689.3812279"
-          - text: "Additional Resources"
-            href: "https://drive.google.com/drive/folders/1UvZqtz98taB0zOW89elN-Cof9DD2ZTrP?usp=drive_link"
       - icon: github
         href: "https://github.com/samsaranc/ai-for-emergency-management"
   page-footer:
