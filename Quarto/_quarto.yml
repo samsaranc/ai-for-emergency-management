@@ -20,7 +20,7 @@ website:
         href: index.qmd
       - text: "Use-Case Catalog"
         href: catalog.qmd
-      - text: "Getting Start in EM"
+      - text: "Getting Started in EM"
         menu:
           - text: "Domain Literacy"
             href: literacy.qmd
